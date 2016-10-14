@@ -44,17 +44,9 @@ Register 1:         | 16 bit  | 16 bit  |
 Register 2:         | 16 bit  | 16 bit  |
                     | Chip 7  | Chip 3  |
                     ---------------------
-Register 3:         | 16 bit  | 16 bit  |
-                    | Chip 7  | Chip 3  |
-                    ---------------------
-Register 4:         | 16 bit  | 16 bit  |
-                    | Chip 7  | Chip 3  |
-                    ---------------------
-Register 5:         | 16 bit  | 16 bit  |
-                    | Chip 7  | Chip 3  |
-                    ---------------------
-Register 6:         | 16 bit  | 16 bit  |
-                    | Chip 7  | Chip 3  |
+    .                    .         .
+    .                    .         .
+    .                    .         .
                     ---------------------
 Register 7:         | 16 bit  | 16 bit  |
                     | Chip 7  | Chip 3  |
@@ -65,8 +57,31 @@ Register 8:         | 16 bit  | 16 bit  |
 Register 9:         | 16 bit  | 16 bit  |
                     | Chip 6  | Chip 2  |
                     ---------------------
-Register 10:        | 16 bit  | 16 bit  |
+    .                    .         .
+    .                    .         .
+    .                    .         .
+                    ---------------------
+Register 16:        | 16 bit  | 16 bit  |
                     | Chip 6  | Chip 2  |
+                    ---------------------
+Register 17:        | 16 bit  | 16 bit  |
+                    | Chip 6,5| Chip 2,1|
+                    ---------------------
+Register 18:        | 16 bit  | 16 bit  |
+                    | Chip 5  | Chip 1  |
+                    ---------------------
+    .                    .         .
+    .                    .         .
+    .                    .         .
+                    ---------------------
+Register 24:        | 16 bit  | 16 bit  |
+                    | Chip 5  | Chip 1  |
+                    ---------------------
+Register 25:        | 16 bit  | 16 bit  |
+                    | Chip 5,4| Chip 1,0|
+                    ---------------------
+Register 26:        | 16 bit  | 16 bit  |
+                    | Chip 4  | Chip 0  |
                     ---------------------
     .                    .         .
     .                    .         .
