@@ -28,14 +28,61 @@ For 8 ASICS, there are 8*137=1096 configuration bits. FEMB FPGA registers are
 
 (32 bits * 35 registers = 1120 bits > 1096 bits we need)
 
-Each 32-bit FPGA register is shared by two different ASIC chips. The lower 16
-bits are given to one chip and the upper 16 given to another:
+The configuration data for the 16 chips is split into two groups based on chip
+number. Group 0 is chip 0-3, while Group 1 is for chip 4-7. Group 0 uses the
+lower 16 bits of each register while Group 1 uses the upper 16 bits of each
+register. The mapping looks like:
 
-31      16 15       0
----------------------
-| 16 bit  | 16 bit  |
-| Chip 7  | Chip 3  |
----------------------
+                    31      16 15       0
+                    ---------------------
+Register 0:         | 16 bit  | 16 bit  |
+                    | Chip 7  | Chip 3  |
+                    ---------------------
+Register 1:         | 16 bit  | 16 bit  |
+                    | Chip 7  | Chip 3  |
+                    ---------------------
+Register 2:         | 16 bit  | 16 bit  |
+                    | Chip 7  | Chip 3  |
+                    ---------------------
+Register 3:         | 16 bit  | 16 bit  |
+                    | Chip 7  | Chip 3  |
+                    ---------------------
+Register 4:         | 16 bit  | 16 bit  |
+                    | Chip 7  | Chip 3  |
+                    ---------------------
+Register 5:         | 16 bit  | 16 bit  |
+                    | Chip 7  | Chip 3  |
+                    ---------------------
+Register 6:         | 16 bit  | 16 bit  |
+                    | Chip 7  | Chip 3  |
+                    ---------------------
+Register 7:         | 16 bit  | 16 bit  |
+                    | Chip 7  | Chip 3  |
+                    ---------------------
+Register 8:         | 16 bit  | 16 bit  |
+                    | Chip 7,6| Chip 3,2|
+                    ---------------------
+Register 9:         | 16 bit  | 16 bit  |
+                    | Chip 6  | Chip 2  |
+                    ---------------------
+Register 10:        | 16 bit  | 16 bit  |
+                    | Chip 6  | Chip 2  |
+                    ---------------------
+    .                    .         .
+    .                    .         .
+    .                    .         .
+                    ---------------------
+Register 33:        | 16 bit  | 16 bit  |
+                    | Chip 4  | Chip 0  |
+                    ---------------------
+Register 34:        | 16 bit  | 16 bit  |
+                    | Chip 4  | Chip 0  |
+                    |         |         |
+                    | upper 12|upper 12 |
+                    | unused  |unused   |
+                    | bits    |bits     |
+                    | zero pad|zero pad |
+                    ---------------------
 
 In detail, the first register is shown here:
 
