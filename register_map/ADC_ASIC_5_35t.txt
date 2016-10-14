@@ -1,0 +1,46 @@
+ADC ASIC 5 35t-era Register Map
+===============================
+
+Per Chip Info:
+--------------
+
+For each chip, the registers look like:
+
+Channel 0:  D0   D1  D2    D3    PCSR  PDSR   SLP  TSTIN
+Channel 1:  D0   D1  D2    D3    PCSR  PDSR   SLP  TSTIN
+        .              .                  .
+        .              .                  .
+        .              .                  .
+Channel 14: D0   D1  D2    D3    PCSR  PDSR   SLP  TSTIN
+Channel 15: D0   D1  D2    D3    PCSR  PDSR   SLP  TSTIN
+Global:     RES  F1  CLK0  CLK1  FRQC  EN_GR  RES  F2     RES
+
+where each variable (DO, F1, etc.) is a bit.
+
+**Notice that each channel has 8 bits and there are 9 global bits, this is how
+we get 8*16+9=137 bits total per chip**
+
+FEMB Programming:
+--------------
+
+For 8 ASICS, there are 8*137=1096 configuration bits. FEMB FPGA registers are
+32 bits wide, so we use 35 registers:
+
+(32 bits * 35 registers = 1120 bits > 1096 bits we need)
+
+Each 32-bit FPGA register is shared by two different ASIC chips. The lower 16
+bits are given to one chip and the upper 16 given to another:
+
+31      16 15       0
+---------------------
+| 16 bit  | 16 bit  |
+| Chip 7  | Chip 3  |
+---------------------
+
+In detail, the first register is shown here:
+
+       bit:   31 30 29 28  27   26  25    24    23 22 21 20  19   18  17   16     15 14 13 12  11   10   9    8     7  6  5  4   3    2    1    0
+             -------------------------------------------------------------------------------------------------------------------------------------
+            |           Chip 7 Ch 14          |  Chip 7 Ch 15                   |          Chip 3 Ch 14          |  Chip 3 Ch 15                    |
+Register 0: | D0 D1 D2 D3 PCSR PDSR SLP TSTIN | D0 D1 D2 D3 PCSR PDSR SLP TSTIN | D0 D1 D2 D3 PCSR PDSR SLP TSTIN | D0 D1 D2 D3 PCSR PDSR SLP TSTIN  |
+
