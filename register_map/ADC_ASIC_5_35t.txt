@@ -84,10 +84,24 @@ Register 34:        | 16 bit  | 16 bit  |
                     | zero pad|zero pad |
                     ---------------------
 
-In detail, the first register is shown here:
+In detail, some example registers are shown below:
 
        bit:   31 30 29 28  27   26  25    24    23 22 21 20  19   18  17   16     15 14 13 12  11   10   9    8     7  6  5  4   3    2    1    0
              -------------------------------------------------------------------------------------------------------------------------------------
-            |           Chip 7 Ch 14          |  Chip 7 Ch 15                   |          Chip 3 Ch 14          |  Chip 3 Ch 15                    |
+            |           Chip 7 Ch 14          |  Chip 7 Ch 15                   |          Chip 3 Ch 14           |  Chip 3 Ch 15                    |
 Register 0: | D0 D1 D2 D3 PCSR PDSR SLP TSTIN | D0 D1 D2 D3 PCSR PDSR SLP TSTIN | D0 D1 D2 D3 PCSR PDSR SLP TSTIN | D0 D1 D2 D3 PCSR PDSR SLP TSTIN  |
+
+
+
+       bit:   31 30 29  28   27  26   25   24    23  22   21  20    19   18  17 16    15 14 13  12   11  10   9     8    7   6    5    4     3    2  1   0
+             -------------------------------------------------------------------------------------------------------------------------------------
+            |           Chip 6 Ch 15      |  Chip 7 Globals                         |      Chip 2 Ch 15           |  Chip 3 Globals                         |
+Register 8: | D1 D2 D3 PCSR PDSR SLP TSTIN RES | F1 CLK0 CLK1 FRQC EN_GR RES F2 RES | D1 D2 D3 PCSR PDSR SLP TSTIN RES | F1 CLK0 CLK1 FRQC EN_GR RES F2 RES |
+
+
+
+       bit:   31 30 29  28   27  26   25   24    23  22   21  20    19   18  17 16    15 14 13  12   11  10   9     8    7   6    5    4     3    2  1   0
+             -------------------------------------------------------------------------------------------------------------------------------------
+            |           Chip 6 Ch 13      |  Chip 6 Ch 14                   | Chip 6 Ch 15 |          Chip 2 Ch 13       |      Chip 2 Ch 14               | Chip 2 Ch 15   |
+Register 9: | D1 D2 D3 PCSR PDSR SLP TSTIN D0 | D1 D2 D3 PCSR PDSR SLP TSTIN D0            | D1 D2 D3 PCSR PDSR SLP TSTIN D0 | D1 D2 D3 PCSR PDSR SLP TSTIN     D0          |
 
