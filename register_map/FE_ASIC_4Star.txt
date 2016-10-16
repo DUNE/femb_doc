@@ -1,33 +1,34 @@
-ADC ASIC 5 35t-era Register Map
-===============================
+FE ASIC 4* Register Map
+=======================
 
 Per Chip Info:
 --------------
 
 For each chip, the registers look like:
-
-            MSB                                           LSB
-Channel 0:  D0   D1  D2    D3    PCSR  PDSR   SLP  TSTIN
-Channel 1:  D0   D1  D2    D3    PCSR  PDSR   SLP  TSTIN
+      
+            LSB                                MSB
+Global:     RES  RES  RES  RES  S16  STB  STB1 SLK
+Channel 0:  STS  SNC  SG0  SG1  ST0  ST1  STC  STF
+Channel 1:  STS  SNC  SG0  SG1  ST0  ST1  STC  STF
         .              .                  .
         .              .                  .
         .              .                  .
-Channel 14: D0   D1  D2    D3    PCSR  PDSR   SLP  TSTIN
-Channel 15: D0   D1  D2    D3    PCSR  PDSR   SLP  TSTIN
-Global:     RES  F1  CLK0  CLK1  FRQC  EN_GR  RES  F2     RES
+Channel 14: STS  SNC  SG0  SG1  ST0  ST1  STC  STF
+Channel 15: STS  SNC  SG0  SG1  ST0  ST1  STC  STF
+            LSB                                MSB
 
-where each variable (DO, F1, etc.) is a bit.
+where each variable (S16, STS, etc.) is a bit.
 
-**Notice that each channel has 8 bits and there are 9 global bits, this is how
-we get 8*16+9=137 bits total per chip**
+**Notice that each channel has 8 bits and there are 8 global bits, this is how
+we get 8*16+8=136 bits total per chip**
 
 FEMB Programming:
 --------------
 
-For 8 ASICS, there are 8*137=1096 configuration bits. FEMB FPGA registers are
-32 bits wide, so we use 35 registers:
+For 8 ASICS, there are 8*136=1088 configuration bits. FEMB FPGA registers are
+32 bits wide, so we use 34 registers:
 
-(32 bits * 35 registers = 1120 bits > 1096 bits we need)
+(32 bits * 34 registers = 1088 bits)
 
 The configuration data for the 16 chips is split into two groups based on chip
 number. Group 0 is chip 0-3, while Group 1 is for chip 4-7. Group 0 uses the
@@ -90,14 +91,6 @@ Register 26:        | 16 bit  | 16 bit  |
                     ---------------------
 Register 33:        | 16 bit  | 16 bit  |
                     | Chip 4  | Chip 0  |
-                    ---------------------
-Register 34:        | 16 bit  | 16 bit  |
-                    | Chip 4  | Chip 0  |
-                    |         |         |
-                    | upper 12|upper 12 |
-                    | unused  |unused   |
-                    | bits    |bits     |
-                    | zero pad|zero pad |
                     ---------------------
 
 In detail, some example registers are shown below:
