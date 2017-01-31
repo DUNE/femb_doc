@@ -11,11 +11,17 @@ First, connect your computer to the board using ethernet and power on the board
 (use a normal, not "cross-over" cable).
 
 Make sure your computer's firewall is disabled. On Ubuntu, run `sudo ufw disable`.
+On Scientific Linux 7, run `systemctl disable firewalld`.
 
-Click on the network manager applet in the task bar and go to edit connections.
-Click on wired connection and click edit. Go to the IPv4 Settings tab. Change
-method to Manual. Click Add and set the Address to 192.168.121.50 and the
-Netmask to 24. Then click save and close the network manager window.
+On Ubuntu, click on the network manager applet in the task bar and go to edit
+connections.  Click on wired connection and click edit. Go to the IPv4 Settings
+tab. Change method to Manual. Click Add and set the Address to 192.168.121.50
+and the Netmask to 24. Then click save and close the network manager window.
+
+On Scientific Linux 7, click on the button in the upper right hand corner of
+the desktop, then click on wired and then wired settings. Click on the gear
+icon. Now click on IPv4 on the left side. Now you can enter the ip address and
+mask.
 
 Network connection debugging commands
 -------------------------------------

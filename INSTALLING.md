@@ -1,3 +1,6 @@
+Installing the femb_python package
+==================================
+
 You must have the `git` package installed to do anything.
 
 To build ROOT, you must also have some other packages.
@@ -40,7 +43,6 @@ Now run:
 
 ```
 export PATH=~/anaconda3/bin:$PATH
-conda install virtualenv
 ```
 
 Now we move on to installing ROOT:
@@ -82,3 +84,14 @@ and setup the package:
 ./setup.sh
 pip install -e .
 ```
+
+You are now all set up. All shell commands begin with femb, so try running `femb_init_board`.
+
+From a fresh terminal, whenever you want to work with the femb_python package, run:
+
+```
+export PATH=~/anaconda3/bin:$PATH
+source activate myenv
+source ~/root-6.08.02-pythonAnaconda3/bin/thisroot.sh
+```
+
