@@ -7,7 +7,10 @@ Setting up your Linux computer to run a test-stand (Ubuntu 14.04/16.04)
 Computer IP Address for communicating with FEMB: 192.168.121.50 Mask:
 255.255.255.0 (192.168.121.50/24)
 
-First, connect your computer to the board using ethernet and power on the board.
+First, connect your computer to the board using ethernet and power on the board
+(use a normal, not "cross-over" cable).
+
+Make sure your computer's firewall is disabled. On Ubuntu, run `sudo ufw disable`.
 
 Click on the network manager applet in the task bar and go to edit connections.
 Click on wired connection and click edit. Go to the IPv4 Settings tab. Change
