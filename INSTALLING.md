@@ -57,7 +57,8 @@ cmake3 --build . >& logBuild
 cmake3 --build . --target install >& logInstall
 ```
 
-You may have to replace cmake3 with cmake on Ubuntu and other OS's or run the configure step twice.
+You may have to replace cmake3 with cmake on Ubuntu and other OS's or run the
+configure step twice.
 
 Now, on to the femb_python package. In whatever directory you want to work in, run:
 
@@ -85,7 +86,8 @@ and setup the package:
 pip install -e .
 ```
 
-You are now all set up. All shell commands begin with femb, so try running `femb_init_board`.
+You are now all set up. All shell commands begin with femb, so try running
+`femb_init_board`.
 
 From a fresh terminal, whenever you want to work with the femb_python package, run:
 
@@ -94,4 +96,7 @@ export PATH=~/anaconda3/bin:$PATH
 source activate myenv
 source ~/root-6.08.02-pythonAnaconda3/bin/thisroot.sh
 ```
+
+You also need to set the environment variable `FEMB_CONFIG` for most commands.
+Running `femb_init_board` will present you with the available choices.
 
