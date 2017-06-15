@@ -8,7 +8,7 @@ If you ever have a crash or error in the test GUI, make sure to just try
 running the test another time or two before contacting an (more) expert or
 performing the following steps.
 
-*Try this for most issues*, especially when you have communications problems
+**Try this for most issues**, especially when you have communications problems
 with the board or other devices:
 
 1. Make sure the USB-blaster, power supply, and signal generator are all 
