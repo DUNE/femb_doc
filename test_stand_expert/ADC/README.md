@@ -19,7 +19,7 @@ with the board or other devices:
 If that doesn't fix it, you could try further diagnostics on the USB interfaces:
 
 1. Run the `lsusb` command. Make sure a device matches the brand name of each
-   of the USB devices. This is Rigol, Agilent for the Keysigt signal generator,
+   of the USB devices. This is Rigol, Agilent for the Keysight signal generator,
    or Altera for the USB-blaster firmware programmer. If all 3 devices aren't 
    visible, then try restarting the devices and make sure they are hooked up 
    via USB.
