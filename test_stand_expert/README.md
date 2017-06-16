@@ -6,7 +6,7 @@ Changing the FEMB_CONFIG
 
 Whenever a test stand is switched from one kind of test to another (ADC to or
 FEMB or FE, and **warm to cold**), the FEMB_CONFIG environmental variable must
-be updated. To do so, change the value exported in the oper accounts .bashrc.
+be updated. To do so, change the value exported in the oper account's .bashrc.
 Then log out and log back in.
 
 For room temperature tests:
@@ -62,5 +62,5 @@ You can then run
 make-release.sh 1.0.19
 ```
 
-to build an distribute a release (like 1.0.19) to the hothdaqs. **This does not
-enable it for the oper account by default**.
+to build and distribute a release (like 1.0.19) to the hothdaqs. **This does
+not enable it for the oper account by default**.
