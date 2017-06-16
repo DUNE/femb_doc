@@ -47,8 +47,8 @@ which femb_init_board
 
 The pathname printed out will include the femb_python version.
 
-Building and Distributing a New Release to the hothdaqs
--------------------------------------------------------
+Building and Distributing a New Release to the hothdaqs and Making Default
+--------------------------------------------------------------------------
 
 If Brett has given you access to the "inst" account, then you can
 
@@ -59,8 +59,14 @@ ssh inst@hothstor2
 You can then run 
 
 ```
-make-release.sh 1.0.19
+./make-release.sh 1.0.19
 ```
 
 to build and distribute a release (like 1.0.19) to the hothdaqs. **This does
 not enable it for the oper account by default**.
+
+If you want to enable it for the oper account by default, then run:
+
+```
+./set-production.sh 1.0.19
+```
