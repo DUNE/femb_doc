@@ -14,7 +14,7 @@ with the board or other devices:
 1. Make sure the USB-blaster, power supply, and signal generator are all 
    connected to the PC with USB cables.
 2. Try power cycling the power supply and signal generator and when that is 
-   complete, restart the PC.
+   complete, shut down the PC and turn it on again (don't just restart).
 
 If that doesn't fix it, you could try further diagnostics on the USB interfaces:
 

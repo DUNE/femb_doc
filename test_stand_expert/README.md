@@ -1,6 +1,8 @@
 General Test-stand Expert Info
 ==============================
 
+[ADC Test Board Expert Page](ADC/README.md)
+
 Changing the FEMB_CONFIG
 ------------------------
 
@@ -70,3 +72,42 @@ If you want to enable it for the oper account by default, then run:
 ```
 ./set-production.sh 1.0.19
 ```
+
+Trouble Shooting the Ethernet Interface
+---------------------------------------
+
+If you think you are having trouble talking to the board, make sure the power
+supply is on, and then run:
+
+```
+femb_read_reg 0
+```
+
+If that prints an error, then you are probably having trouble talking to the
+board. If it just returns some numbers, then you are able to talk to he board.
+
+To further diagnose the problem, run
+
+```
+arp -a
+```
+
+The result should look like:
+
+```
+? (192.168.121.1) at aa:bb:cc:dd:ee:10 [ether] on enp2s0
+? (172.22.22.2) at 00:13:3b:0f:a6:60 [ether] on enp0s31f6
+```
+
+The entry with (192.168.121.1) is the one that talks to the board. It should be
+there and should be at an address like the one shown above. If it isn't then
+you need to restart the networking. You should be able to run from the operator
+account (without putting in a password):
+
+```
+sudo restart-network
+```
+
+If that doesn't work, then you can try turning off the power to the board,
+shutting down the computer, waiting a moment, then turning the computer back on
+(restarting doesn't do it).
