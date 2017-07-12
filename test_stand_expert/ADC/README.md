@@ -35,12 +35,13 @@ If that doesn't fix it, you could try further diagnostics on the USB interfaces:
       028130DD   EP4CGX50
    ```
 
-   If not, then you are having trouble talking to the USB-Blaster. Try restarting 
-   the PC.
+   If not, then you are having trouble talking to the USB-Blaster. You can try 
+   killing the jtagd process by running `killall jtagd`, then see if 
+   `femb_firmware_check_programmer` works. If not, try restarting the PC.
 4. Try programming the 2 MHz firmware with `femb_firmware_program` and the 1 MHz 
    with `femb_firmware_program -1`. If that works then firmware programming should 
    work in the GUI. If not, maybe the error messages can help you debug the problem
-   (or send them to an exper).
+   (or send them to an expert).
 
 Test Board Physical Setup
 -------------------------
