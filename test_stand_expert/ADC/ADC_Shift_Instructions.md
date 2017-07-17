@@ -1,5 +1,5 @@
-ADC ASIC Test-stand Shifter Instructions
-========================================
+ADC ASIC Test-stand Cold Test Shifter Instructions
+==================================================
 
 1) Make sure dewar is covered and moisture is wiped off the lip
 
@@ -43,6 +43,9 @@ FEMB_CONFIG--> End sync ADC
 Successfully setup board.
  
 
+If the sync fails or if a chip takes too many tries (> 3) to sync, try reseating
+the mezannine board on the test board.
+
 6) Now open the FEMB GUI to see what the ADC is reading back by typing
 
 femb_gui
@@ -71,4 +74,15 @@ sure it exits and releases control of the FEMB.
 
 11) start running FE  ADC Test GUI you opened in step 4.
 
-12) Remember to record the run number, board number and chip number in the Google docs.
+12) Remember to record the run number, board number and chip number in the Google docs. Start a new basket label
+    with board and chip number.
+
+13) If the run completes successfully, mark a Y in the appropriate column on Google docs.
+    If run fails, note the failure error in the Google doc and make sure to indicate
+    on the white board that the testboard failed in the cold. Test boards that fail more
+    than once should be returned to Guang/Feng for cleaning.
+
+14) Remove the basket quickly, cover with plastic bag and tag and put it under the table.
+    Dress the cables and tie them off with the velcro.
+    REMEMBER TO INDICATE TEST STATUS ON THE TAG!
+
