@@ -5,7 +5,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
 2) Connect DRY basket above covered dewar
 
-3) Chip/testboard preparation instructions
+3) Chip/testboard preparation instructions:
   - Check the board status on the whiteboard. If testboard has failed more than once,
     move it to the cleaning and recovery area and select a different board.
   - Make sure the chip to be tested hasnt failed previously on the same board. Check
@@ -19,36 +19,36 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
 5) Open a new terminal window and setup the ADC and sync by typing
 
-femb_adc_setup_board
+   femb_adc_setup_board
  
 
-You will see
+   You will see
 
-EMB_CONFIG--> Config ADC ASIC SPI
-FEMB_CONFIG--> Program ADC ASIC SPI
-FEMB_CONFIG--> Check ADC ASIC SPI
-FEMB_CONFIG--> ADC ASIC SPI is OK
-FEMB_CONFIG--> Reset FEMB is DONE
-FEMB_CONFIG--> Start sync ADC
-FEMB_CONFIG--> Test ADC 0
-Starting testUnsync adc:  0
-FEMB_CONFIG--> ADC not synced, try to fix
-try shift: 0 phase: 0 testingUnsync
+   FEMB_CONFIG--> Config ADC ASIC SPI
+   FEMB_CONFIG--> Program ADC ASIC SPI
+   FEMB_CONFIG--> Check ADC ASIC SPI
+   FEMB_CONFIG--> ADC ASIC SPI is OK
+   FEMB_CONFIG--> Reset FEMB is DONE
+   FEMB_CONFIG--> Start sync ADC
+   FEMB_CONFIG--> Test ADC 0
+   Starting testUnsync adc:  0
+   FEMB_CONFIG--> ADC not synced, try to fix
+   try shift: 0 phase: 0 testingUnsync
 
-...
-
-FEMB_CONFIG--> ADC synchronized
-FEMB_CONFIG--> Latch latency 0x00000006 0x00000000 Phase: 0xfffc0000
-FEMB_CONFIG--> End sync ADC
-Successfully setup board.
+   ...
+ 
+   FEMB_CONFIG--> ADC synchronized
+   FEMB_CONFIG--> Latch latency 0x00000006 0x00000000 Phase: 0xfffc0000
+   FEMB_CONFIG--> End sync ADC
+   Successfully setup board.
  
 
-If the sync fails or if a chip takes too many tries (> 3) to sync, try reseating
-the mezannine board on the test board.
+   If the sync fails or if a chip takes too many tries (> 3) to sync, try reseating
+   the mezannine board on the test board.
 
 6) Now open the FEMB GUI to see what the ADC is reading back by typing
 
-femb_gui
+   femb_gui
 
 7) Adjust the waveform generator to generate a sine wave with a frequency between 1 and 10kHz:
 
