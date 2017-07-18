@@ -8,10 +8,10 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 3) Chip/testboard preparation instructions:
   - Check the board status on the whiteboard. If testboard has failed more than once,
     move it to the cleaning and recovery area and select a different board.
-  - Make sure the chip to be tested hasnt failed previously on the same board. Check
-    the Google docs. Any chip that failed twice on two different boards should be moved
+  - Make sure the chip to be tested hasnt failed previously. Check
+    the Google docs. Any chip that failed twice should be moved
     to the bad ADC holder.
-  - Insert chip into the testboard. Use magnifying glass to verify proper alignment of pins.
+  - Insert NEW chip into the clamshell. Use magnifying glass to verify proper alignment of pins.
   - Close clamshell and cable the board if it is not cabled up.
   - Place board in the basket. Connect cables to DAQ making sure cables are dressed properly and there is enough slack.
 
@@ -44,7 +44,8 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
  
 
    If the sync fails or if a chip takes too many tries (> 3) to sync, try reseating
-   the mezannine board on the test board.
+   the mezannine board on the test board. Power cycle and rerun the script several times until
+   the chip sync immediately.
 
 6) Now open the FEMB GUI to see what the ADC is reading back by typing
 
@@ -62,7 +63,13 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
 8) Leave chip ON and and reading out and now start lowering it into the dewar slowly, watch the waveform on the GUI and
 
-make sure it is stable or reverts to stability after each step lowering it into the dewar.
+make sure it is stable or reverts to stability after each step lowering it into the dewar. Dunking instructions:
+
+     -Lower the basket until the LN just touches the bottom of the basket. Leave it there until boiling subsides
+     -Lower the basket until LN is just above the white chip power connector - check current draw and leave for 5 minutes
+     -Lower until LN is just below the clamshell - leave for 5 minutes
+     -Lower in 1/4" increments (use meter stick) waiting 3-5 minutes between increments or until waveform on GUI stabilizes whichever is longer
+     -Once LN completely covers clamshell, secure the basket rope.
 
 9) If 8) fails and you lose the readback from the chip while immersing in the cold. Close the waveform GUI and try step 5) and 6) and see if it recovers.
 
@@ -72,7 +79,7 @@ Make sure waveform generator is correctly configured. Check the current draw to 
 
 sure it exits and releases control of the FEMB.
 
-11) start running FE  ADC Test GUI you opened in step 4.
+11) start running the FE ADC Test GUI you opened in step 4.
 
 12) Remember to record the run number, board number and chip number in the Google docs. Start a new basket label
     with board and chip number.
@@ -82,7 +89,7 @@ sure it exits and releases control of the FEMB.
     on the white board that the testboard failed in the cold. Test boards that fail more
     than once should be returned to Guang/Feng for cleaning.
 
-14) Remove the basket quickly, cover with plastic bag and tag and put it under the table.
+14) Remove the basket quickly, cover with plastic bag using clothes pegs to close the bag and tag and put it under the table.
     Dress the cables and tie them off with the velcro.
     REMEMBER TO INDICATE TEST STATUS ON THE TAG!
 
