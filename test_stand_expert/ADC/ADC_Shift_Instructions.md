@@ -45,7 +45,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
    If the sync fails or if a chip takes too many tries (> 3) to sync, try reseating
    the mezannine board on the test board. Power cycle and rerun the script several times until
-   the chip sync immediately.
+   the chip syncs immediately.
 
 6) Now open the FEMB GUI to see what the ADC is reading back by typing
 
@@ -67,8 +67,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
      * Lower the basket until the LN just touches the bottom of the basket. Leave it there until boiling subsides
      * Lower the basket until LN is just above the white chip power connector, check current draw and leave for 5 minutes
      * Lower until LN is just below the clamshell, leave for 5 minutes
-     * Lower in 1/4" increments (use meter stick) waiting 3 to 5 minutes between increments or until waveform on GUI stabilizes  
-      whichever is longer
+     * Lower in 1/4" increments (use meter stick) waiting 3 to 5 minutes between increments or until waveform on GUI stabilizes whichever is longer
      * Once LN completely covers clamshell, secure the basket rope.
 
 9) If 8) fails and you lose the readback from the chip while immersing in the cold. Close the waveform GUI 
