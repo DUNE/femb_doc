@@ -6,6 +6,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 2) Connect DRY basket above covered dewar
 
 3) Chip/testboard preparation instructions:
+   ---------------------------------------- 
   * Check the board status on the whiteboard. If testboard has failed more than once,
     move it to the cleaning and recovery area and select a different board.
   * Make sure the chip to be tested hasnt failed previously. Check
@@ -61,8 +62,10 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
      [insert instructions for the Keysight generator here]
 
-8) Leave chip ON and and reading out and now start lowering it into the dewar slowly, watch the waveform on the GUI and
-   make sure it is stable or reverts to stability after each step lowering it into the dewar. Dunking instructions:
+8) Dunking instructions:
+   ---------------------
+   Leave chip ON and and reading out and now start lowering it into the dewar slowly, watch the waveform on the GUI and
+   make sure it is stable or reverts to stability after each step lowering it into the dewar.
 
      * Lower the basket until the LN just touches the bottom of the basket. Leave it there until boiling subsides
      * Lower the basket until LN is just above the white chip power connector, check current draw and leave for 5 minutes
@@ -92,3 +95,9 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
     Dress the cables and tie them off with the velcro.
     REMEMBER TO INDICATE TEST STATUS ON THE TAG!
 
+15) Drying instructions:
+    -------------------- 
+      * Wait 15 minutes for the board in the bag to reach room temperature. 
+      * Remove board and uncable. 
+      * Remove chip from clamshell and put it the in appropriate box (good or bad)
+      * Put wet board in the drying box with the blow dryer set to 120F. Put the cold ends of the cables in drying box
