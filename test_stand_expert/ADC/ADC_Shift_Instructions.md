@@ -67,7 +67,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
      -Lower the basket until the LN just touches the bottom of the basket. Leave it there until boiling subsides
      -Lower the basket until LN is just above the white chip power connector - check current draw and leave for 5 minutes
      -Lower until LN is just below the clamshell - leave for 5 minutes
-     -Lower in 1/4" increments (use meter stick) waiting 3-5 minutes between increments or until waveform on GUI stabilizes 
+     -Lower in 1/4" increments (use meter stick) waiting 3-5 minutes between increments or until waveform on GUI stabilizes  
       whichever is longer
      -Once LN completely covers clamshell, secure the basket rope.
 
