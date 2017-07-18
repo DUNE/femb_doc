@@ -6,14 +6,14 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 2) Connect DRY basket above covered dewar
 
 3) Chip/testboard preparation instructions:
-  - Check the board status on the whiteboard. If testboard has failed more than once,
+  * Check the board status on the whiteboard. If testboard has failed more than once,
     move it to the cleaning and recovery area and select a different board.
-  - Make sure the chip to be tested hasnt failed previously. Check
+  * Make sure the chip to be tested hasnt failed previously. Check
     the Google docs. Any chip that failed twice should be moved
     to the bad ADC holder.
-  - Insert NEW chip into the clamshell. Use magnifying glass to verify proper alignment of pins.
-  - Close clamshell and cable the board if it is not cabled up.
-  - Place board in the basket. Connect cables to DAQ making sure cables are dressed properly and there is enough slack.
+  * Insert NEW chip into the clamshell. Use magnifying glass to verify proper alignment of pins.
+  * Close clamshell and cable the board if it is not cabled up.
+  * Place board in the basket. Connect cables to DAQ making sure cables are dressed properly and there is enough slack.
 
 4) Start up a fresh FE ADC Tests GUI - BUT DO NOT RUN YET
 
@@ -53,11 +53,11 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
 7) Adjust the waveform generator to generate a sine wave with a frequency between 1 and 10kHz:
 
-     -On the RIGOL wave function generator click on the burst button once to take local control
+     * On the RIGOL wave function generator click on the burst button once to take local control
 
-     -Make sure SINE, CH1 and OUTPUT1 are all clicked on.
+     * Make sure SINE, CH1 and OUTPUT1 are all clicked on.
 
-     -Adjust Sine wave parameters till you see the waveform output from the chip clearly.
+     * Adjust Sine wave parameters till you see the waveform output from the chip clearly.
 
      [insert instructions for the Keysight generator here]
 
