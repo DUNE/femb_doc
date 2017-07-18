@@ -9,7 +9,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
   * Check the board status on the whiteboard. If testboard has failed more than once,
     move it to the cleaning and recovery area and select a different board.
   * Make sure the chip to be tested hasnt failed previously. Check
-    the Google docs. Any chip that failed twice should be moved
+    the Google docs. Any chip that failed (didnt complete tests) should be moved
     to the bad ADC holder.
   * Insert NEW chip into the clamshell. Use magnifying glass to verify proper alignment of pins.
   * Close clamshell and cable the board if it is not cabled up.
