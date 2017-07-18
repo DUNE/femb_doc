@@ -99,5 +99,5 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
     -------------------- 
       * Wait 15 minutes for the board in the bag to reach room temperature. 
       * Remove board and uncable. 
-      * Remove chip from clamshell and put it the in appropriate box (good or bad)
+      * Remove chip from clamshell and put it in the appropriate box:  good if a test completed bad if it didnt
       * Put wet board in the drying box with the blow dryer set to 120F. Put the cold ends of the cables in drying box
