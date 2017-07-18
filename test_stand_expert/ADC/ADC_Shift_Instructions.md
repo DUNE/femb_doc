@@ -53,17 +53,16 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
 7) Adjust the waveform generator to generate a sine wave with a frequency between 1 and 10kHz:
 
-     -On the RIGOL wave function generator click on the burst button once
+     -On the RIGOL wave function generator click on the burst button once to take local control
 
      -Make sure SINE, CH1 and OUTPUT1 are all clicked on.
 
      -Adjust Sine wave parameters till you see the waveform output from the chip clearly.
 
-[insert instructions for the Keysight generator here]
+     [insert instructions for the Keysight generator here]
 
 8) Leave chip ON and and reading out and now start lowering it into the dewar slowly, watch the waveform on the GUI and
-
-make sure it is stable or reverts to stability after each step lowering it into the dewar. Dunking instructions:
+   make sure it is stable or reverts to stability after each step lowering it into the dewar. Dunking instructions:
 
      -Lower the basket until the LN just touches the bottom of the basket. Leave it there until boiling subsides
      -Lower the basket until LN is just above the white chip power connector - check current draw and leave for 5 minutes
@@ -73,13 +72,12 @@ make sure it is stable or reverts to stability after each step lowering it into 
      -Once LN completely covers clamshell, secure the basket rope.
 
 9) If 8) fails and you lose the readback from the chip while immersing in the cold. Close the waveform GUI 
-and try step 5) and 6) and see if it recovers.
+   and try step 5) and 6) and see if it recovers.
 
-Make sure waveform generator is correctly configured. Check the current draw to make sure a cable hasnt failed.
+   Make sure waveform generator is correctly configured. Check the current draw to make sure a cable hasnt failed.
 
 10) If all goes well and chip is fully immersed and reading out correctly, stop the femb_gui and make
-
-sure it exits and releases control of the FEMB.
+    sure it exits and releases control of the FEMB.
 
 11) start running the FE ADC Test GUI you opened in step 4.
 
