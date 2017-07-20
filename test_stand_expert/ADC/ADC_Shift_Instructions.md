@@ -28,23 +28,23 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
    You will see
 
-   FEMB_CONFIG--> Config ADC ASIC SPI
-   FEMB_CONFIG--> Program ADC ASIC SPI
-   FEMB_CONFIG--> Check ADC ASIC SPI
-   FEMB_CONFIG--> ADC ASIC SPI is OK
-   FEMB_CONFIG--> Reset FEMB is DONE
-   FEMB_CONFIG--> Start sync ADC
-   FEMB_CONFIG--> Test ADC 0
-   Starting testUnsync adc:  0
-   FEMB_CONFIG--> ADC not synced, try to fix
-   try shift: 0 phase: 0 testingUnsync
+   FEMB_CONFIG--> Config ADC ASIC SPI  
+   FEMB_CONFIG--> Program ADC ASIC SPI  
+   FEMB_CONFIG--> Check ADC ASIC SPI  
+   FEMB_CONFIG--> ADC ASIC SPI is OK  
+   FEMB_CONFIG--> Reset FEMB is DONE  
+   FEMB_CONFIG--> Start sync ADC  
+   FEMB_CONFIG--> Test ADC 0  
+   Starting testUnsync adc:  0  
+   FEMB_CONFIG--> ADC not synced, try to fix  
+   try shift: 0 phase: 0 testingUnsync  
 
-   ...
+   ...  
 
-   FEMB_CONFIG--> ADC synchronized
-   FEMB_CONFIG--> Latch latency 0x00000006 0x00000000 Phase: 0xfffc0000
-   FEMB_CONFIG--> End sync ADC
-   Successfully setup board.
+   FEMB_CONFIG--> ADC synchronized  
+   FEMB_CONFIG--> Latch latency 0x00000006 0x00000000 Phase: 0xfffc0000  
+   FEMB_CONFIG--> End sync ADC  
+   Successfully setup board.  
    
  
 
