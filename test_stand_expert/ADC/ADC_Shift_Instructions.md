@@ -75,7 +75,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
     * Check the output of the different channels. Continuously monitor output while dunking. 
 
-8) Dunking instructions:
+7) Dunking instructions:
    ---------------------
    Leave chip ON and and reading out and now start lowering it into the dewar slowly, watch the waveform on the GUI and
    make sure it is stable or reverts to stability after each step lowering it into the dewar.
@@ -86,27 +86,35 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
      * Lower in 1/4" increments (use meter stick) waiting 1 to 2 minutes between increments or until waveform on GUI stabilizes whichever is longer
      * Once LN completely covers clamshell, secure the basket rope.
 
-9) If 8) fails and you lose the readback from the chip while immersing in the cold. Close the waveform GUI 
-   and try step 5) and 6) and see if it recovers.
+     * if you lose the readback from the chip while immersing in the cold:
+         - Close the waveform GUI  and try step 5) and 6) and see if it recovers. 
+         - Make sure waveform generator is correctly configured. 
+       	 - Check the current draw to make sure a cable hasnt failed.
 
-   Make sure waveform generator is correctly configured. Check the current draw to make sure a cable hasnt failed.
+8) Run the FE ADC Tests
+    --------------------
 
-10) If all goes well and chip is fully immersed and reading out correctly, stop the femb_gui and make
+   * If all goes well and chip is fully immersed and reading out correctly, stop the femb_gui and make
     sure it exits and releases control of the FEMB.
 
-11) start running the FE ADC Test GUI you opened in step 4.
+   * start running the FE ADC Test GUI you opened in step 4.
 
-12) Remember to record the run number, board number and chip number in the Google docs. Start a new basket label
-    with board and chip number.
+   *  Remember to record the run number, board number and chip number in the Google docs. 
+  
+   * Start a new basket label with board and chip number.
+   
+   * If the run completes successfully, mark a Y in the appropriate column on Google docs.
+     If run fails, note the failure error in the Google doc and make sure to indicate
+     on the white board that the testboard failed in the cold. Test boards that fail more
+     than once should be returned to Guang/Feng for cleaning.
 
-13) If the run completes successfully, mark a Y in the appropriate column on Google docs.
-    If run fails, note the failure error in the Google doc and make sure to indicate
-    on the white board that the testboard failed in the cold. Test boards that fail more
-    than once should be returned to Guang/Feng for cleaning.
-
-14) Remove the basket quickly, cover with plastic bag using clothes pegs to close the bag and tag and put it under the table.
-    Dress the cables and tie them off with the velcro.
-    REMEMBER TO INDICATE TEST STATUS ON THE TAG!
+9) After cold ADC test completes (or fails):
+   ----------------------------------------
+    * Remove the basket quickly
+    * cover with plastic bag using clothes pegs to close the bag
+    * Wait for 10 minutes till cables warm up
+    * Dress the cables and tie them off with the velcro.
+    * Tag basket and put it under the table. REMEMBER TO INDICATE TEST STATUS ON THE TAG!
 
 15) Drying instructions:
     -------------------- 
