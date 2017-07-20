@@ -23,7 +23,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
    * Run the setup script by typing
    
-   femb_adc_setup_board
+      femb_adc_setup_board
  
 
    You will see
@@ -45,6 +45,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
    FEMB_CONFIG--> Latch latency 0x00000006 0x00000000 Phase: 0xfffc0000
    FEMB_CONFIG--> End sync ADC
    Successfully setup board.
+   
  
 
    * If the sync fails or if a chip takes too many tries (> 3) to sync:
