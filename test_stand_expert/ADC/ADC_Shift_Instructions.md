@@ -18,7 +18,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
 4) Start up a fresh FE ADC Tests GUI - BUT DO NOT RUN YET
 
-5) Open a new terminal window and setup the ADC and sync by typing
+5) Open a new terminal window and setup the ADC and sync with the FPGA mezannine by typing
 
    femb_adc_setup_board
  
@@ -44,9 +44,9 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
    Successfully setup board.
  
 
-   If the sync fails or if a chip takes too many tries (> 3) to sync, try reseating
-   the mezannine board on the test board. Power cycle and rerun the script several times until
-   the chip syncs immediately.
+   If the sync fails or if a chip takes too many tries (> 3) to sync, turn the power off and
+   try reseating the chip in the socket and reseating the mezannine board on the test board.
+   Power cycle and rerun the script. Do this until the chip consistently syncs immediately.
 
 6) Now open the FEMB GUI to see what the ADC is reading back by typing
 
@@ -68,9 +68,9 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
    make sure it is stable or reverts to stability after each step lowering it into the dewar.
 
      * Lower the basket until the LN just touches the bottom of the basket. Leave it there until boiling subsides
-     * Lower the basket until LN is just above the white chip power connector, check current draw and leave for 5 minutes
-     * Lower until LN is just below the clamshell, leave for 5 minutes
-     * Lower in 1/4" increments (use meter stick) waiting 3 to 5 minutes between increments or until waveform on GUI stabilizes whichever is longer
+     * Lower the basket until LN is just above the white chip power connector, check current draw and leave for 2 minutes
+     * Lower until LN is just below the clamshell, leave for 2 minutes
+     * Lower in 1/4" increments (use meter stick) waiting 1 to 2 minutes between increments or until waveform on GUI stabilizes whichever is longer
      * Once LN completely covers clamshell, secure the basket rope.
 
 9) If 8) fails and you lose the readback from the chip while immersing in the cold. Close the waveform GUI 
