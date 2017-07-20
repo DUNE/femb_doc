@@ -59,13 +59,14 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
    femb_gui
 
-7) Adjust the waveform generator to generate a sine wave with a frequency between 1 and 10kHz:
+7) Adjust the waveform generator to generate a sine wave with a frequency between:
 
      * On the RIGOL wave function generator click on the burst button once to take local control
 
      * Make sure SINE, CH1 and OUTPUT1 are all clicked on.
 
-     * Adjust Sine wave parameters till you see the waveform output from the chip clearly.
+     * Adjust Sine wave parameters till you see the waveform output from the chip clearly. Recommended settings
+     are 1 kHz, 1.3V high level, 100mV low level
 
      [insert instructions for the Keysight generator here]
 
