@@ -40,7 +40,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
    try shift: 0 phase: 0 testingUnsync
 
    ...
- 
+
    FEMB_CONFIG--> ADC synchronized
    FEMB_CONFIG--> Latch latency 0x00000006 0x00000000 Phase: 0xfffc0000
    FEMB_CONFIG--> End sync ADC
