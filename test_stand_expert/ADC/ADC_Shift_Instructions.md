@@ -18,8 +18,11 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
 4) Start up a fresh FE ADC Tests GUI - BUT DO NOT RUN YET
 
-5) Open a new terminal window and setup the ADC and sync with the FPGA mezannine by typing
+5) Initialize the ADC and sync with the FPGA mezannine:
+   ----------------------------------------------------
 
+   * Run the setup script by typing
+   
    femb_adc_setup_board
  
 
@@ -44,9 +47,12 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
    Successfully setup board.
  
 
-   If the sync fails or if a chip takes too many tries (> 3) to sync, turn the power off and
-   try reseating the chip in the socket and reseating the mezannine board on the test board.
-   Power cycle and rerun the script. Do this until the chip consistently syncs immediately.
+   * If the sync fails or if a chip takes too many tries (> 3) to sync:
+       - Turn the power off
+       - Try reseating the chip in the socket and reseating the mezannine board on the test board.
+       - Power cycle and rerun the script.
+
+   * Repeat this step until the chip consistently syncs immediately.
 
 6) Now open the FEMB GUI to see what the ADC is reading back by typing
 
