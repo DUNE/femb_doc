@@ -12,6 +12,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
   * Make sure the chip to be tested hasnt failed previously. Check
     the Google docs. Any chip that failed (didnt complete tests) should be moved
     to the bad ADC holder.
+  * CHECK THE MEZANNINE BOARD IS SCREWED IN TIGHTLY  
   * Insert NEW chip into the clamshell. Use magnifying glass to verify proper alignment of pins.
   * Close clamshell and cable the board if it is not cabled up.
   * Place board in the basket. Connect cables to DAQ making sure cables are dressed properly and there is enough slack.
