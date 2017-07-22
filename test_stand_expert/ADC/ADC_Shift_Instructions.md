@@ -48,14 +48,15 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
    Successfully setup board.  
    
  
-
    * If the sync fails or if a chip doesnt sync immediately:
        - Turn the power off
-       - Try reseating the chip in the socket and reseating the mezannine board on the test board.
+       - Try reseating the chip in the socket.
          CHECK THE MEZANNINE BOARD IS TIGHTLY SCREWED IN
        - Power cycle and rerun the script.
+       - If this doesnt work after several attempts, try putting in a new chip and then a new board.
 
-   * Repeat this step until the chip consistently syncs immediately.
+   * Switch the power off and repeat this step. Make sure chip synchs immediately after cycling power twice and
+     rerunning the initialization and sync script.
 
 6) Start monitoring the chip output
    ---------------------------------
@@ -80,7 +81,8 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 7) Dunking instructions:
    ---------------------
    Leave chip ON and and reading out and now start lowering it into the dewar slowly, watch the waveform on the GUI and
-   make sure it is stable or reverts to stability after each step lowering it into the dewar.
+   make sure it is stable or reverts to stability after each step lowering it into the dewar. Also use the "Synch ADC
+   button on the GUI to resynch after each insertion step.
 
      * Lower the basket until the LN just touches the bottom of the basket. Leave it there until boiling subsides
      * Lower the basket until LN is just above the white chip power connector, check current draw and leave for 20 seconds
@@ -112,15 +114,21 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
 9) After cold ADC test completes (or fails):
    ----------------------------------------
-    * Remove the basket quickly
-    * cover with plastic bag using clothes pegs to close the bag
-    * Wait for 10 minutes till cables warm up
+    * Pull the basket out of the LN quickly
+    * Cover with plastic bag while still hanging and use clothes pegs to close the bag
+    * Wait for 10 minutes till cables warm up. Use timer to time yourself.
     * Dress the cables and tie them off with the velcro.
-    * Tag basket and put it under the table. REMEMBER TO INDICATE TEST STATUS ON THE TAG!
+    * Tag basket, remove it from the pulley and put it under the table.
+      REMEMBER TO INDICATE TEST STATUS ON THE TAG!
+    * Leave covered basket under the table to dry further for another 10 minutes (use timer)
+    * If the test failed to complete, put a mark against the board number on the whiteboard in the
+      column corresponding to the board.
+    * If the test completed successfully remove any marks in the board column on the whiteboard  
 
 15) Drying instructions:
     -------------------- 
-      * Wait 15 minutes for the board in the bag to reach room temperature. 
+      * Wait 10 minutes for the board in the bag to reach room temperature. 
       * Remove board and uncable. 
       * Remove chip from clamshell and put it in the appropriate box:  good if a test completed bad if it didnt
       * Put wet board in the drying box with the blow dryer set to 120F. Put the cold ends of the cables in drying box
+      * If the board failed twice in a row (see whiteboard) - put it in the bad board cardboard box.
