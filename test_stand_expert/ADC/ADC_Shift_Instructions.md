@@ -14,11 +14,25 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
     to the bad ADC holder.
   * CHECK THE MEZANNINE BOARD IS SCREWED IN TIGHTLY  
   * Insert NEW chip into the clamshell. Use magnifying glass to verify proper alignment of pins.
-  * Close clamshell and cable the board if it is not cabled up.
+  * Close clamshell and cable the board if it is not cabled up:
+
+  ![Cabled ADC Board](CabledADCtestboard.jpg)
+
   * Place board in the basket. Connect cables to DAQ making sure cables are dressed properly and there is enough slack.
+  
+     - Ethernet cable is connected to back of DAQ computer to slot labeled DAQ
+     - USB cable from blaster is connected to one of the two USB connectors in the front of the computer
+     - Lemo is connected to the channel labeled "Output" on the RIGOL function generator
+     - Red and Black test board power cable goes to CH2 of the power supply (2.5V)
+     - Yellow and black and White and Black power cables for the FPGA mezannine go to CH1 of the power supply (5V)
+
+   ![Connections at power supply](PS-Cabled.jpg)
 
 4) Start up a fresh FE ADC Tests GUI - BUT DO NOT RUN YET
-
+   ------------------------------------------------------
+   * Click on the FE ADC Tests icon on the desktop
+   * Fill in your name, test board id and ASIC id
+   
 5) Initialize the ADC and sync with the FPGA mezannine:
    ----------------------------------------------------
 
