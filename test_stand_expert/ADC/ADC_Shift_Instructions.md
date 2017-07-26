@@ -1,24 +1,31 @@
 ADC ASIC Test-stand Cold Test Shifter Instructions
 ==================================================
 
-1) Make sure dewar is covered and moisture is wiped off the lip
 
-2) Connect DRY basket above covered dewar
-
-3) Chip/testboard preparation instructions:
+1) Chip/testboard preparation instructions:
    ---------------------------------------- 
   * Check the board status on the whiteboard. If testboard has failed more than once,
     move it to the cleaning and recovery area and select a different board.
   * Make sure the chip to be tested hasnt failed previously. Check
     the Google docs. Any chip that failed (didnt complete tests) should be moved
     to the bad ADC holder.
-  * CHECK THE MEZANNINE BOARD IS SCREWED IN TIGHTLY  
+  * CHECK THE MEZANNINE BOARD IS SCREWED IN TIGHTLY
   * Insert NEW chip into the clamshell. Use magnifying glass to verify proper alignment of pins.
+  * Start a new basket label with board and chip number.
   * Close clamshell and cable the board if it is not cabled up:
 
   ![Cabled ADC Board](CabledADCtestboard.jpg)
 
-  * Place board in the basket. Connect cables to DAQ making sure cables are dressed properly and there is enough slack.
+2) Basket and board assembly instructions
+   ---------------------------------------
+
+  * Make sure dewar is covered and moisture is wiped off the lip
+
+  * Connect DRY basket above covered dewar
+
+  * Place board in the basket.
+
+  * Connect cables to DAQ computer making sure cables are dressed properly and there is enough slack:
   
      - Ethernet cable is connected to back of DAQ computer to slot labeled DAQ
      - USB cable from blaster is connected to one of the two USB connectors in the front of the computer
@@ -28,12 +35,14 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
    ![Connections at power supply](PS-Cabled.jpg)
 
-4) Start up a fresh FE ADC Tests GUI - BUT DO NOT RUN YET
+3) Start up a fresh FE ADC Tests GUI - BUT DO NOT RUN YET
    ------------------------------------------------------
    * Click on the FE ADC Tests icon on the desktop
    * Fill in your name, test board id and ASIC id
-   
-5) Initialize the ADC and sync with the FPGA mezannine:
+
+    ![ADC Tests GUI](adc_test_gui.png)
+
+4) Initialize the ADC and sync with the FPGA mezannine:
    ----------------------------------------------------
 
    * Run the setup script by typing
@@ -72,12 +81,16 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
    * Switch the power off and repeat this step. Make sure chip synchs immediately after cycling power twice and
      rerunning the initialization and sync script.
 
-6) Start monitoring the chip output
+5) Start monitoring the chip output
    ---------------------------------
 
    * Open the monitoring GUI by typing
 
      femb_gui
+
+   ![FEMB GUI Controls](femb_gui_settings.png)
+
+   ![FEMB GUI Display](femb_gui_sine.png)
 
    * Adjust the waveform generator to generate a sine wave:
 
@@ -92,7 +105,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
     * Check the output of the different channels. Continuously monitor output while dunking. 
 
-7) Dunking instructions:
+6) Dunking instructions:
    ---------------------
    Leave chip ON and and reading out and now start lowering it into the dewar slowly, watch the waveform on the GUI and
    make sure it is stable or reverts to stability after each step lowering it into the dewar. Also use the "Synch ADC
@@ -109,24 +122,27 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
          - Make sure waveform generator is correctly configured. 
        	 - Check the current draw to make sure a cable hasnt failed.
 
-8) Run the FE ADC Tests
+7) Run the FE ADC Tests
     --------------------
 
    * If all goes well and chip is fully immersed and reading out correctly, stop the femb_gui and make
     sure it exits and releases control of the FEMB.
 
-   * start running the FE ADC Test GUI you opened in step 4.
+   * Start running the FE ADC Test GUI you opened in step 4:
+      - Click on power up board.
+      - After board power up and initialization enter the ASIC current draw (CH2 on power supply). Current draw
+        is typically 0.09 +/- 0.02 A
+      - Click on Start tests.
 
-   * Remember to record the run number, board number and chip number in the Google docs. 
-  
-   * Start a new basket label with board and chip number.
+   * Remember to record the run number, board number and chip number in the CE Teststands LogBook on Google docs.
+     There is a bookmark to the logbook on the Firefox web browser
    
    * If the run completes successfully, mark a Y in the appropriate column on Google docs.
-     If run fails, note the failure error in the Google doc and make sure to indicate
+     If run fails, note the failure error in the Google doc LogBook and make sure to indicate
      on the white board that the testboard failed in the cold. Test boards that fail more
-     than once should be returned to Guang/Feng for cleaning.
+     than once should be returned to Guang/Feng/Shanshan for cleaning.
 
-9) After cold ADC test completes (or fails):
+8) After cold ADC test completes (or fails):
    ----------------------------------------
     * Pull the basket out of the LN quickly
     * Cover with plastic bag while still hanging and use clothes pegs to close the bag
@@ -139,7 +155,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
       column corresponding to the board.
     * If the test completed successfully remove any marks in the board column on the whiteboard  
 
-15) Drying instructions:
+9) Drying instructions:
     -------------------- 
       * Wait 10 minutes for the board in the bag to reach room temperature. 
       * Remove board and uncable. 
