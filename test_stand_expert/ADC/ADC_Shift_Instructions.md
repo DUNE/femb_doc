@@ -134,6 +134,8 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
         is typically 0.09 +/- 0.02 A
       - Click on Start tests.
 
+     ![Power supply on](power_supply_on.jpg)
+
    * Remember to record the run number, board number and chip number in the CE Teststands LogBook on Google docs.
      There is a bookmark to the logbook on the Firefox web browser
    
