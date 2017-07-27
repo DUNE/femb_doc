@@ -94,4 +94,12 @@ From outside the firewall, you need to tunnel into hothstor2 with a command
 like `ssh -L 8080:localhost:80 hothstor2` then you can point your browser to
 http://localhost:8080/~ana/ to access the page.
 
+Summaries are run at 02:22 every day for the previous day's data, and 03:33 on
+Mondays for the previous week's data. On Fridays at 03:33 the previous Friday
+throuth Thursday's data is summarized for the shift meeting. The Monday and
+Friday run also run so_far that summarizes all data taken so far.
+
+One can also download the data in `hothstor2:~ana/adc_summary_json/` and make
+summaries using the `femb_adc_ranking` command. The command line help, `-h`,
+shows how to limit the time range.
 
