@@ -33,11 +33,11 @@ Viewing Log Files (Sumatra)
 Sumatra sends the log files and other info about each run to a database. Brett
 setup a nice interface on hothstor2 for viewing the database. From the hothdaqs
 or inside the BNL network, you should be able to access it by pointing your
-browser to `http://hothstor2.phy.bnl.gov:8942/`
+browser to http://hothstor2.phy.bnl.gov:8942/
 
 From outside the firewall, you need to tunnel into hothstor2 with a command
 like `ssh -L 8942:localhost:8942 hothstor2` then you can point your browser to
-`http://localhost:8942` to access the page.
+http://localhost:8942 to access the page.
 
 The "label" column is not necessarily the same as the timestamp, but you can
 see the timestamp in the output data column. The executable column tells you

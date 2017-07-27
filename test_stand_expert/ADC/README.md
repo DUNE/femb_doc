@@ -79,3 +79,19 @@ nearest the LEMO inputs for the shifter to use.
 
 Make sure the USB-blaster, power supply, and signal generator are all connected
 to the PC with USB cables.
+
+Summary of Many Runs
+--------------------
+
+The "ana" user on the hothdaqs copies all of the summary json files to
+hothstor2, where "ana" runs scripts that make summary plots. These are
+displayed on a webserver for you to view.
+
+From the hothdaqs or inside the BNL network, you should be able to access it by
+pointing your browser to http://hothstor2.phy.bnl.gov/~ana/
+
+From outside the firewall, you need to tunnel into hothstor2 with a command
+like `ssh -L 8080:localhost:80 hothstor2` then you can point your browser to
+http://localhost:8080/~ana/ to access the page.
+
+
