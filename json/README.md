@@ -62,3 +62,30 @@ jq -s '[.[] | {"timestamp":.timestamp, "board_id":.board_id, "serial":.serial, "
    > public_html/adc-summary.json
 ```
 
+Maybe JSON isn't the best format for some report or further processing.  It is easy to massage JSON into other forms using templates.
+
+```
+$ virtualenv venv
+$ source venv/bin/activate
+$ pip install j2cli
+$ j2 adc-summary.txt.j2 adc-summary.json > adc-summary.txt
+```
+
+Where `j2` is from the [j2cli](https://github.com/kolypto/j2cli) package and is used to apply 
+the JSON to a [Jinja2](http://jinja.pocoo.org/docs/2.9/templates/) template and spit out something new.
+In this example the template just turns each summary dictionary into a line:
+
+```
+{% for item in summary %}{{item.timestamp}} {{item.board_id}} {{item.serial}} {{item.pass}} {{item.datadir}}
+{% endfor %}
+```
+
+The resultinf text file is then:
+
+```
+20170621T103851 8 110 True /dsk/1/data/oper/adcasic/adcTest_P1single_hothdaq4/20170621T103851
+20170621T113213 8 138 True /dsk/1/data/oper/adcasic/adcTest_P1single_hothdaq4/20170621T113213
+20170621T121549 8 139 True /dsk/1/data/oper/adcasic/adcTest_P1single_hothdaq4/20170621T121549
+...
+```
+
