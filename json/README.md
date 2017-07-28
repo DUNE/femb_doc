@@ -53,3 +53,12 @@ done
 [ "8", 139, true ]
 ...
 ```
+
+Generate a JSON file with a summary of many summaries:
+
+```
+jq -s '[.[] | {"timestamp":.timestamp, "board_id":.board_id, "serial":.serial, "pass":.testResults.pass, "datadir":.sumatra.datadir}]' \
+   /dsk/1/data/sync-json/hothdaq5/dsk/1/oper/adcasic/*/*/adcTest_*.json \
+   > public_html/adc-summary.json
+```
+
