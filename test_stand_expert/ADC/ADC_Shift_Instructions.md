@@ -3,8 +3,9 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
 
 1) Chip/testboard preparation instructions:
-   ---------------------------------------- 
-  * Check the board status on the whiteboard. If testboard has failed more than once,
+   ----------------------------------------
+  * Always use latex gloves when handling the boards/chips (unless you are allergic) 
+  * Check the board status on the whiteboard. If a testboard has failed more than once,
     move it to the cleaning and recovery area and select a different board.
   * Make sure the chip to be tested hasnt failed previously. Check
     the Google docs. Any chip that failed (didnt complete tests) should be moved
