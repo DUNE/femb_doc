@@ -7,9 +7,8 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
   * Always use latex gloves when handling the boards/chips (unless you are allergic) 
   * Check the board status on the whiteboard. If a testboard has failed more than once,
     move it to the cleaning and recovery area and select a different board.
-  * Make sure the chip to be tested hasnt failed previously. Check
-    the Google docs. Any chip that failed (didnt complete tests) should be moved
-    to the bad ADC holder.
+  * Pick a chip from the box titled "Test Me" or "Retest" (shift leader will tell you which). Check
+    the Google docs. Any chip from "Retest) that failed earlier should not be tested with the same board.
   * CHECK THE MEZANNINE BOARD IS SCREWED IN TIGHTLY
   * Insert NEW chip into the clamshell. Use magnifying glass to verify proper alignment of pins.
   * Start a new basket label with board and chip number.
@@ -118,6 +117,9 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
      * Lower the basket until the LN is just below the white bottom connector on the socket board.
      * Lower the basket until LN is just above the white chip power connector, check current draw and leave for 20 seconds.
        Current draw on CH2 (2.5V) of the power supply should be 0.09 +/- 0.02 A
+
+     ![Power supply on](power_supply_on.jpg)
+     
      * Lower until LN is just below the clamshell, leave for 20 seconds
      * Lower in 3/4" increments (use meter stick) waiting for 20 seconds or until waveform on GUI stabilizes whichever is longer
      * Once LN completely covers clamshell, secure the basket rope.
@@ -132,19 +134,14 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
    * If the chip is fully submerged the readout is stable on all 16 channels. Click on "Collect David Adams Data" 
 
-   * Start running the FE ADC Test GUI you opened in step 4:
-      - Click on power up board.
-      - After board power up and initialization enter the ASIC current draw (CH2 on power supply). Current draw
-        is typically 0.09 +/- 0.02 A
-      - Click on Start tests.
+   * After the "David Adams" data is collected a plot of the 16 channels with triangular ramp data is displayed. 
+     If DA data looks okay (no ratty or missing plots). Then click on "Start Tests"
 
-     ![Power supply on](power_supply_on.jpg)
-
-   * Remember to record the run number, board number and chip number in the CE Teststands LogBook on Google docs.
+   * Record the run number (on the Cold Test GUI), board number and chip number in the CE Teststands LogBook on Google docs.
      There is a bookmark to the logbook on the Firefox web browser
    
-   * If the run completes successfully, mark a Y in the appropriate column on Google docs.
-     If run fails, note the failure error in the Google doc LogBook and make sure to indicate
+   * If the DA data looks good, mark a Y in the appropriate column on Google docs.
+     If the tests fail, note the failure error in the Google doc LogBook and make sure to indicate
      on the white board that the testboard failed in the cold. Test boards that fail more
      than once should be returned to Guang/Feng/Shanshan for cleaning.
 
