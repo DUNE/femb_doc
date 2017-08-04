@@ -36,19 +36,14 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
    ![Connections at power supply](PS-Cabled.jpg)
 
-3) Start up a fresh FE ADC Tests GUI - BUT DO NOT RUN YET
-   ------------------------------------------------------
-   * Click on the FE ADC Tests icon on the desktop
-   * Fill in your name, test board id and ASIC id
+3) Initialize the ADC and check sync with the FPGA mezannine in the warm:
+   ----------------------------------------------------------------------
 
-    ![ADC Tests GUI](adc_test_gui.png)
-
-4) Initialize the ADC and sync with the FPGA mezannine:
-   ----------------------------------------------------
-
-   * Run the setup script by typing
+   * With the board in the basket but before you start inserting in the cold, run a series of stability tests.
    
-      femb_adc_setup_board
+   * Start a new terminal and run the setup script by typing
+   
+      femb_adc_setup_board_cold
  
 
    You will see
@@ -73,27 +68,34 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
    
  
    * If the sync fails or if a chip doesnt sync immediately:
-       - Turn the power off
+       - Turn the power off using the following command
+
+        femb_power_supply --turnOff
+	
        - Try reseating the chip in the socket.
          CHECK THE MEZANNINE BOARD IS TIGHTLY SCREWED IN
-       - Power cycle and rerun the script.
+       - Rerun the script:
+
+         femb_adc_setup_board_cold
+       
        - If this doesnt work after several attempts, try putting in a new chip and then a new board.
+       	 REMEMBER TO TURN POWER OFF!
 
    * Switch the power off and repeat this step. Make sure chip synchs immediately after cycling power twice and
      rerunning the initialization and sync script.
 
-5) Start monitoring the chip output
+4) Start monitoring the chip output
    ---------------------------------
+   * Click on the ADC Cold Test Gui icon on the desktop. Put in your name and test board id and ASIC id:
 
-   * Open the monitoring GUI by typing
+   ![FEMB GUI Display](adc_gui_v40.png)
+  
+   * Click "Re-Power-up & Setup Board". The board will resynch one more time and a GUI
+     window showing the read back from 16 chips using an input sine wave will be shown:
 
-     femb_gui
+   ![FEMB GUI 16 Ch. Display](adc_16ch_viewer.png)
 
-   ![FEMB GUI Controls](femb_gui_settings.png)
-
-   ![FEMB GUI Display](femb_gui_sine.png)
-
-   * Adjust the waveform generator to generate a sine wave:
+   * To adjust the waveform generator to generate a sine wave:
 
      - On the RIGOL wave function generator click on the burst button once to take local control
 
@@ -106,14 +108,16 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
     * Check the output of the different channels. Continuously monitor output while dunking. 
 
-6) Dunking instructions:
+5) Dunking instructions:
    ---------------------
-   Leave chip ON and and reading out and now start lowering it into the dewar slowly, watch the waveform on the GUI and
-   make sure it is stable or reverts to stability after each step lowering it into the dewar. Also use the "Synch ADC
-   button on the GUI to resynch after each insertion step.
+   Leave chip ON and and reading out and now start lowering it into the dewar slowly, watch the waveform on the 16 channel
+   GUI and make sure it is stable or reverts to stability after each step lowering it into the dewar. Tapping the chip
+   and/or socket lightly may be necessary to restore stability - please ask the shift leader to do this.
 
      * Lower the basket until the LN just touches the bottom of the basket. Leave it there until boiling subsides
-     * Lower the basket until LN is just above the white chip power connector, check current draw and leave for 20 seconds
+     * Lower the basket until the LN is just below the white bottom connector on the socket board.
+     * Lower the basket until LN is just above the white chip power connector, check current draw and leave for 20 seconds.
+       Current draw on CH2 (2.5V) of the power supply should be 0.09 +/- 0.02 A
      * Lower until LN is just below the clamshell, leave for 20 seconds
      * Lower in 3/4" increments (use meter stick) waiting for 20 seconds or until waveform on GUI stabilizes whichever is longer
      * Once LN completely covers clamshell, secure the basket rope.
@@ -123,11 +127,10 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
          - Make sure waveform generator is correctly configured. 
        	 - Check the current draw to make sure a cable hasnt failed.
 
-7) Run the FE ADC Tests
+6) Run the FE ADC Tests
     --------------------
 
-   * If all goes well and chip is fully immersed and reading out correctly, stop the femb_gui and make
-    sure it exits and releases control of the FEMB.
+   * If the chip is fully submerged the readout is stable on all 16 channels. Click on "Collect David Adams Data" 
 
    * Start running the FE ADC Test GUI you opened in step 4:
       - Click on power up board.
@@ -145,11 +148,11 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
      on the white board that the testboard failed in the cold. Test boards that fail more
      than once should be returned to Guang/Feng/Shanshan for cleaning.
 
-8) After cold ADC test completes (or fails):
+7) After cold ADC test completes (or fails):
    ----------------------------------------
     * Pull the basket out of the LN quickly
     * Cover with plastic bag while still hanging and use clothes pegs to close the bag
-    * Wait for 10 minutes till cables warm up. Use timer to time yourself.
+    * Wait for 5 minutes till cables warm up. Use timer to time yourself.
     * Dress the cables and tie them off with the velcro.
     * Tag basket, remove it from the pulley and put it under the table.
       REMEMBER TO INDICATE TEST STATUS ON THE TAG!
@@ -160,8 +163,11 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
 9) Drying instructions:
     -------------------- 
-      * Wait 10 minutes for the board in the bag to reach room temperature. 
+      * Wait 10 minutes for the board in the bag to reach room temperature. DO NOT LEAVE THE TEST BOARD FOR 
+        MORE THAN 15 MINUTES IN THE BAGGED BASKET. 
       * Remove board and uncable. 
       * Remove chip from clamshell and put it in the appropriate box:  good if a test completed bad if it didnt
-      * Put wet board in the drying box with the blow dryer set to 120F. Put the cold ends of the cables in drying box
+      * Use compressed air to blow the moisture off the socket board front AND back.       
+      * Put wet board in the drying oven with the thermostat set no higher than 120F. Put the cables in as well. 
+        Let the board dry in the oven for 15 minutes.
       * If the board failed twice in a row (see whiteboard) - put it in the bad board cardboard box.
