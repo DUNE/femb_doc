@@ -1,8 +1,5 @@
-General Test-stand Expert Info
+Oscillator Testing Instructions
 ==============================
-
-[Oscillator Test Page](OscillatorTesting/README.md)
-
 
 Introduction
 -------------------------
