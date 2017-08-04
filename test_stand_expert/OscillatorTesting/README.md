@@ -10,7 +10,7 @@ Setup
 Below is the picture of the oscillator testing setup. Channel 3 of the DC power supply (RIGOL TECHNOLOGIES, DP832) provides 3.3 V to the test board. The output from the test board are connected to the 4 channels of the digital oscilloscope (Rigol Technologies, DS1074B). 
 ![Oscillator testing](WholeSetup.png)
 
-Below is the picture of the close-up of the test board. Oscilloscope channel corresponding to each socket is also shown. Please note that the small dot in the oscillator should be towards the mentioned end.
+Below is the picture of the close-up of the test board. Oscilloscope channel corresponding to each socket is also shown. **Please note that the small dot in the oscillator should be towards the mentioned end.**
 ![Oscillator testing](TestBoard.png)
 
 Testing procedure
@@ -35,7 +35,7 @@ Are the oscillators cold and ready for testing?
 (y/n):
 ```
 
-The prompts will guide the shifter through all three thermal cycles and prints out the summary of results in the end, like the one below:
+The prompts will guide the shifter through all three thermal cycles and will print out the summary of results in the end, like the one below:
 ```
 *********************************************************************************
 Summary of results:
@@ -46,8 +46,10 @@ Summary of results:
 	Channel 3             Passed              Passed              Passed
 	Channel 4             Passed              Passed              Passed
 *********************************************************************************
-```					      
-To dry the board, set the heat gun at 120 F and move it around the board until everything on outside looks completely dry. Then open the socket lid, take out the oscillator and dry some more. One thing to be careful is to put the oscillator back to the same socket as before; so placing the oscillators in a paper with marks like 1, 2, 3, 4 to identify the corresponding oscillator is useful.
+```
+If oscillator fails even one cycle, it goes into the bag marked 'bad'; ie, **for an oscillator to go into 'good' bag, it should pass all three thermal cycles**. Please remember to make an entry of results in the log.
+
+To dry the board, set the heat gun to 120 F and move it around the board until everything on outside looks completely dry. Then open the socket lid, take out the oscillator and dry some more. One thing to be careful is to put the oscillator back to the same socket as before; so placing the oscillators in a paper with marks like 1, 2, 3, 4 to identify the corresponding oscillator is useful.
 
 
 
