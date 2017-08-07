@@ -25,15 +25,18 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
   * Place board in the basket.
 
+   ![Basket cabled and ready](cabled_basket.jpg)
+
   * Connect cables to DAQ computer making sure cables are dressed properly and there is enough slack:
   
      - Ethernet cable is connected to back of DAQ computer to slot labeled DAQ
      - USB cable from blaster is connected to one of the two USB connectors in the front of the computer
      - Lemo is connected to the channel labeled "Output" on the RIGOL function generator
-     - Red and Black test board power cable goes to CH2 of the power supply (2.5V)
-     - Yellow and black and White and Black power cables for the FPGA mezannine go to CH1 of the power supply (5V)
+     - White and black mezannine board power cables go to CH1 of the power supply (5V)
+     - Red and Black test board power cables go to CH2 of the power supply (2.5V)
+     - Yellow (and black) test board power cables go to CH3 of the power supply (5V)
 
-   ![Connections at power supply](PS-Cabled.jpg)
+   ![Connections at power supply](cabled_ps_3channels.jpg)
 
 3) Initialize the ADC and check sync with the FPGA mezannine in the warm:
    ----------------------------------------------------------------------
@@ -116,13 +119,12 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
      * Lower the basket until the LN just touches the bottom of the basket. Leave it there until boiling subsides
      * Lower the basket until the LN is just below the white bottom connector on the socket board.
      * Lower the basket until LN is just above the white chip power connector, check current draw and leave for 20 seconds.
-       Current draw on CH2 (2.5V) of the power supply should be 0.09 +/- 0.02 A
-
-     ![Power supply on](power_supply_on.jpg)
-     
+       Current draw on CH2 (2.5V) of the power supply should be 0.09 +/- 0.02 A     
      * Lower until LN is just below the clamshell, leave for 20 seconds
      * Lower in 3/4" increments (use meter stick) waiting for 20 seconds or until waveform on GUI stabilizes whichever is longer
      * Once LN completely covers clamshell, secure the basket rope.
+
+      ![Submerged ADC test board](testboard_submerged.jpg)
 
      * if you lose the readback from the chip while immersing in the cold:
          - Close the waveform GUI  and try step 5) and 6) and see if it recovers. 
@@ -135,20 +137,30 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
    * If the chip is fully submerged the readout is stable on all 16 channels. Click on "Collect David Adams Data" 
 
    * After the "David Adams" data is collected a plot of the 16 channels with triangular ramp data is displayed. 
-     If DA data looks okay (no ratty or missing plots). Then click on "Start Tests"
+     If DA data looks okay (no ratty or missing plots ) mark a Y in the appropriate column on Google docs.
+     There is a bookmark to the logbook on the Firefox web browser: 
 
-   * Record the run number (on the Cold Test GUI), board number and chip number in the CE Teststands LogBook on Google docs.
-     There is a bookmark to the logbook on the Firefox web browser
+    ![Good DA data](da_data_summary.png)
+
+    ![Google docs](google_run_sheet.png)
+
+   * After DA data is done, click on "Start Tests". 
    
-   * If the DA data looks good, mark a Y in the appropriate column on Google docs.
-     If the tests fail, note the failure error in the Google doc LogBook and make sure to indicate
+   * After tests are complete, indicate "Tests Complete" on the Google docs LogBook and note which checks failed.
+
+   ![Tests complete](adc_gui_1.40_after_complete.png)
+
+   * If the tests fail, note the failure error in the Google doc LogBook and make sure to indicate
      on the white board that the testboard failed in the cold. Test boards that fail more
      than once should be returned to Guang/Feng/Shanshan for cleaning.
 
 7) After cold ADC test completes (or fails):
    ----------------------------------------
     * Pull the basket out of the LN quickly
-    * Cover with plastic bag while still hanging and use clothes pegs to close the bag
+    * Cover with plastic bag while still hanging and use clothes pegs to close the bag:
+
+    ![Bagged basket](basket_bagged.jpg)
+
     * Wait for 5 minutes till cables warm up. Use timer to time yourself.
     * Dress the cables and tie them off with the velcro.
     * Tag basket, remove it from the pulley and put it under the table.
@@ -167,4 +179,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
       * Use compressed air to blow the moisture off the socket board front AND back.       
       * Put wet board in the drying oven with the thermostat set no higher than 120F. Put the cables in as well. 
         Let the board dry in the oven for 15 minutes.
+
+      ![Drying oven](drying_oven.jpg)
+      
       * If the board failed twice in a row (see whiteboard) - put it in the bad board cardboard box.
