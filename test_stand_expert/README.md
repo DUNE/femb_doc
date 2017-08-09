@@ -1,7 +1,10 @@
 General Test-stand Expert Info
 ==============================
 
+[FE Test Board Expert Page](FE/README.md)
 [ADC Test Board Expert Page](ADC/README.md)
+[Oscillator Test Board Expert Page](OscillatorTesting/README.md)
+[Flash Test Board Expert Page](FlashTesting/README.md)
 
 Changing the FEMB_CONFIG
 ------------------------
@@ -16,12 +19,14 @@ For room temperature tests:
 - Quad FE Tester: FEMB_CONFIG=quadFeAsic
 - Single ADC Tester on hothdaq3: FEMB_CONFIG=adcTest_P1single
 - Single ADC Tester on hothdaq4: FEMB_CONFIG=adcTest_P1single_hothdaq4
+- Single ADC Tester on hothdaq5: FEMB_CONFIG=adcTest_P1single_hothdaq5
 
 For cryogenic tests:
 
 - Quad FE Tester: FEMB_CONFIG=quadFeAsic_cold
 - Single ADC Tester on hothdaq3: FEMB_CONFIG=adcTest_P1single_cold
 - Single ADC Tester on hothdaq4: FEMB_CONFIG=adcTest_P1single_hothdaq4_cold
+- Single ADC Tester on hothdaq4: FEMB_CONFIG=adcTest_P1single_hothdaq5_cold
 
 The full list of available configurations can be listed by running 
 `unset FEMB_CONFIG` and then a command that requires the configuration like
