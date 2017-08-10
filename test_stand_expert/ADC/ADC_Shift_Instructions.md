@@ -95,6 +95,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
    * Check Altera USB blaster is working. A blue LED light should be on and you need to power on the testboard:
 
      femb_power_supply --turnOn
+
      femb_firmware_check_progammer
 
 4) Start monitoring the chip output
