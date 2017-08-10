@@ -38,8 +38,8 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
    ![Connections at power supply](cabled_ps_3channels.jpg)
 
-3) Initialize the ADC and check sync with the FPGA mezannine in the warm:
-   ----------------------------------------------------------------------
+3) Check ADC functionality and stability in the warm:
+   --------------------------------------------------
 
    * With the board in the basket but before you start inserting in the cold, run a series of stability tests.
    
