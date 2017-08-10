@@ -83,8 +83,19 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
        - If this doesnt work after several attempts, try putting in a new chip and then a new board.
        	 REMEMBER TO TURN POWER OFF!
 
-   * Switch the power off and repeat this step. Make sure chip synchs immediately after cycling power twice and
+   * Switch the power off and repeat this step: 
+
+      femb_power_supply --turnOff
+
+      femb_adc_setup_board_cold   
+
+     Make sure chip synchs immediately after cycling power twice and
      rerunning the initialization and sync script.
+  
+   * Check Altera USB blaster is working. A blue LED light should be on and you need to power on the testboard:
+
+     femb_power_supply --turnOn
+     femb_firmware_check_progammer
 
 4) Start monitoring the chip output
    ---------------------------------
