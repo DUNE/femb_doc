@@ -94,7 +94,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
   
    * Check Altera USB blaster is working. A blue LED light should be on and you need to power on the testboard:
 
-     femb_power_supply --turnOn
+     femb_power_supply --turnOn (if power is off)
 
      femb_firmware_check_progammer
 
@@ -138,10 +138,11 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
       ![Submerged ADC test board](testboard_submerged.jpg)
 
-     * if you lose the readback from the chip while immersing in the cold:
-         - Close the waveform GUI  and try step 5) and 6) and see if it recovers. 
-         - Make sure waveform generator is correctly configured. 
+     * if the readback from the chip starts going bad while immersing in the cold:
+         - Fully insert the chip
        	 - Check the current draw to make sure a cable hasnt failed.
+         - Lightly tap on the chip using the plastic stick - protect your hands from the cold!
+         - Close the waveform GUI  and click on "Re-setup Board" and see if it recovers.
 
 6) Run the FE ADC Tests
     --------------------
@@ -194,4 +195,38 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
       ![Drying oven](drying_oven.jpg)
       
-      * If the board failed twice in a row (see whiteboard) - put it in the bad board cardboard box.
+      * If the board failed twice in a row (see whiteboard) - put a label on it as "bad" and remove it from circulation.
+
+10) How to recover from common failure modes
+    ----------------------------------------
+
+    * Errors with FEMB_UDP failure to read register: usually means that the ethernet connection between
+      the FPGA mezannine and the DAQ is lost. To recover:
+
+       - Make sure power is on (use femb_power_supply --turnOn)
+       - Try to reseat the ethernet cable at both the mezannine and DAQ ends
+       - Run the following command twice:
+             sudo restart-network
+       - Check you can read back from the femb:
+             femb_read_reg 5
+        you should get back 0x0000000
+
+     * JTAG errors: the FPGA USB firmware programmer sometimes fails if it gets too cold. You will get an indiction
+       of an error on the ADC Test GUI. If you scroll back on the terminal you should see something like this:
+
+      ![JTAG error](jtag_failure.png)
+
+       You can check if the programmer is working using the commands in Step 3. To recover:
+	  - Reseat the USB connection on the DAQ end or plug into another USB port
+	  - Reseat the firmware programmer (little black box) on the mezannine end. Remember to protect
+	    your hands if it is cold!
+	  - If all else fails and the end of the firmware programmer attached to the mezannine board is not too
+	    cold, replace with a different blaster.
+
+     * SPI readback errors: This error means that the software is unable to verify the chip is properly initialized
+       by reading back the values from a register. This is the most common reason for chip failure in the cold is
+       mostly due to socket problems not the chip. You can try gently tapping on the chip and clicking on "Re-setup Board",
+       but it is difficult to recover from. Move on to the next chip and leave this chip to be retested another time
+       with another socket board.
+
+      ![SPI readback failure](SPI_failed_readback.png)
