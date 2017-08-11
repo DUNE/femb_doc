@@ -36,7 +36,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
      - Red and Black test board power cables go to CH2 of the power supply (2.5V)
      - Yellow (and black) test board power cables go to CH3 of the power supply (5V)
 
-   ![Connections at power supply](cabled_ps_3channels.jpg)
+   ![Connections at power supply](cabled_ps_3channels_small.jpg)
 
 3) Check ADC functionality and stability in the warm:
    --------------------------------------------------
