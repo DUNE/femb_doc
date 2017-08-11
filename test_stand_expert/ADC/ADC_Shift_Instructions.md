@@ -193,7 +193,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
       * Put wet board in the drying oven with the thermostat set no higher than 120F. Put the cables in as well. 
         Let the board dry in the oven for 15 minutes.
 
-      ![Drying oven](drying_oven.jpg)
+      ![Drying oven](drying_oven_small.jpg)
       
       * If the board failed twice in a row (see whiteboard) - put a label on it as "bad" and remove it from circulation.
 
