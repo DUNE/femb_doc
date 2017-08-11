@@ -215,7 +215,8 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
      * JTAG errors: the FPGA USB firmware programmer sometimes fails if it gets too cold. You will get an indiction
        of an error on the ADC Test GUI. You can check if the programmer is working using the commands in Step 3. To recover:
-	  - Reseat the USB connection on the DAQ end or plug into another USB port
+
+          - Reseat the USB connection on the DAQ end or plug into another USB port
 	  - Reseat the firmware programmer (little black box) on the mezannine end. Remember to protect
 	    your hands if it is cold!
 	  - If all else fails and the end of the firmware programmer attached to the mezannine board is not too
