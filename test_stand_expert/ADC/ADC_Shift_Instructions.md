@@ -136,7 +136,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
      * Lower in 3/4" increments (use meter stick) waiting for 20 seconds or until waveform on GUI stabilizes whichever is longer
      * Once LN completely covers clamshell, secure the basket rope.
 
-      ![Submerged ADC test board](testboard_submerged.jpg)
+      ![Submerged ADC test board](testboard_submerged_2.jpg)
 
      * if the readback from the chip starts going bad while immersing in the cold:
          - Fully insert the chip
@@ -165,7 +165,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
    * If the tests fail, note the failure error in the Google doc LogBook and make sure to indicate
      on the white board that the testboard failed in the cold. Test boards that fail more
-     than once should be returned to Guang/Feng/Shanshan for cleaning.
+     than once should be returned to shift leader and put out of circulation for the day.
 
 7) After cold ADC test completes (or fails):
    ----------------------------------------
@@ -177,7 +177,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
     * Wait for 5 minutes till cables warm up. Use timer to time yourself.
     * Dress the cables and tie them off with the velcro.
     * Tag basket, remove it from the pulley and put it under the table.
-      REMEMBER TO INDICATE TEST STATUS ON THE TAG!
+      REMEMBER TO INDICATE TEST STATUS ON THE TAG (Failed, DA complete, All tests complete)      
     * Leave covered basket under the table to dry further for another 10 minutes (use timer)
     * If the test failed to complete, put a mark against the board number on the whiteboard in the
       column corresponding to the board.
@@ -208,7 +208,9 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
        - Run the following command twice:
              sudo restart-network
        - Check you can read back from the femb:
-             femb_read_reg 5
+
+        femb_read_reg 5
+
         you should get back 0x0000000
 
      * JTAG errors: the FPGA USB firmware programmer sometimes fails if it gets too cold. You will get an indiction
@@ -224,7 +226,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 	    cold, replace with a different blaster.
 
      * SPI readback errors: This error means that the software is unable to verify the chip is properly initialized
-       by reading back the values from a register. This is the most common reason for chip failure in the cold is
+       by reading back the values from a register. This is the most common reason for chip failure in the cold and is
        mostly due to socket problems not the chip. You can try gently tapping on the chip and clicking on "Re-setup Board",
        but it is difficult to recover from. Move on to the next chip and leave this chip to be retested another time
        with another socket board.
