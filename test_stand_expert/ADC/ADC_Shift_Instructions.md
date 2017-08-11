@@ -25,7 +25,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
   * Place board in the basket.
 
-   ![Basket cabled and ready](cabled_basket.jpg)
+   ![Basket cabled and ready](cabled_basket_2.jpg)
 
   * Connect cables to DAQ computer making sure cables are dressed properly and there is enough slack:
   
