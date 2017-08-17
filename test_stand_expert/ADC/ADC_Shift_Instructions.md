@@ -135,9 +135,13 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
 5a) Dunking instructions (Vertical Insertion):
    --------------------------------------------
-   Leave chip ON and and reading out and now start lowering it into the dewar slowly, watch the waveform on the 16 channel
-   GUI and make sure it is stable or reverts to stability after each step lowering it into the dewar. Tapping the chip
-   and/or socket lightly may be necessary to restore stability. Please ask the shift leader to do this.
+   
+   Leave chip ON and and reading out and now start lowering it into the
+   dewar slowly, watch the waveform on the 16 channel GUI and make
+   sure it is stable or reverts to stability after each step lowering
+   it into the dewar. Tapping the chip and/or socket lightly may be
+   necessary to restore stability. Please ask the shift leader to do
+   this.
 
      * Lower the basket until the LN just touches the bottom of the basket. Leave it there until boiling subsides
      * Lower the basket until the LN is just below the white bottom connector on the socket board.
@@ -160,7 +164,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
   * Lower the basket until the LN just touches the bottom of the basket. Leave it there until boiling subsides
   * Lower the basket further until LN is just below the test board and wait until boiling subsides (at least 30 seconds).
   * Lower to the bottom of the clam shell and wait 30 seconds. Watch the 16 channel GUI to make sure chip readout is stable.
-   * Lower until chip and clam shell are fully submerged. If readout becomes unstable or synch is lost, tap the chip gently (ask shift leader)
+  * Lower until chip and clam shell are fully submerged. If readout becomes unstable or synch is lost, tap the chip gently (ask shift leader)
 
  ![Submerged ADC test board](testboard_submerged_3.jpg)
 
