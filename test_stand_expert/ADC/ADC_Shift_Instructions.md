@@ -136,8 +136,10 @@ b) Horizontal Insertion
 
     * Check the output of the different channels. Continuously monitor output while dunking. 
 
-5a) Dunking instructions (Vertical Insertion):
-    -------------------------------------------
+5) Dunking instructions
+   --------------------
+ a) Vertical Insertion:
+    -------------------
    Leave chip ON and and reading out and now start lowering it into the
    dewar slowly, watch the waveform on the 16 channel GUI and make
    sure it is stable or reverts to stability after each step lowering
@@ -160,8 +162,8 @@ b) Horizontal Insertion
          - Lightly tap on the chip using the plastic stick - protect your hands from the cold!
          - Close the waveform GUI  and click on "Re-setup Board" and see if it recovers.
 
-5b) Dunking Instructions (Horizontal Insertion)
-    -------------------------------------------
+ b) Horizontal Insertion
+    --------------------
   * Lower the basket until the LN just touches the bottom of the basket. Leave it there until boiling subsides
   * Lower the basket further until LN is just below the test board and wait until boiling subsides (at least 30 seconds).
   * Lower to the bottom of the clam shell and wait 30 seconds. Watch the 16 channel GUI to make sure chip readout is stable.
@@ -208,8 +210,11 @@ b) Horizontal Insertion
       column corresponding to the board.
     * If the test completed successfully remove any marks in the board column on the whiteboard  
 
-9a) Drying instructions (Vertical Insert):
-    ------------------------------------------
+9) Drying instructions
+   -------------------
+   a) Vertical Insertion
+      ------------------
+
       * MAKE SURE POWER IS OFF.
       * Wait 10 minutes for the board in the bag to reach room temperature. DO NOT LEAVE THE TEST BOARD FOR 
         MORE THAN 15 MINUTES IN THE BAGGED BASKET. 
@@ -223,8 +228,9 @@ b) Horizontal Insertion
       
       * If the board failed twice in a row (see whiteboard) - put a label on it as "bad" and remove it from circulation.
 
-9b) Drying instructions (Horizontal Insert):
-    ----------------------------------------
+ b) Horizontal Insertion:
+    ---------------------
+
       * Wait 10 minutes for the board in the bag to reach room temperature. DO NOT LEAVE THE TEST BOARD FOR 
         MORE THAN 15 MINUTES IN THE BAGGED BASKET. 
       * If board failed, shift leader will uncable and replace board.
