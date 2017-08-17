@@ -116,9 +116,10 @@ board and the test board:
 
      femb_firmware_check_progammer
 
-# 4) Start monitoring the chip output
+# 4) Start the ADC chip testing process
 
-   * Click on the ADC Cold Test Gui icon on the desktop. Put in your name and test board id and ASIC id:
+   * Click on the ADC Cold Test Gui icon on the desktop. ALWAYS START A NEW GUI WITH EACH NEW TEST. 
+Put in your name and test board id and ASIC id. 
 
    ![FEMB GUI Display](adc_gui_v40.png)
   
