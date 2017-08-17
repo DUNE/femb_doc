@@ -159,8 +159,8 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
     -------------------------------------------
 
   * Lower the basket until the LN just touches the bottom of the basket. Leave it there until boiling subsides
-   * Lower the basket further until LN is just below the test board and wait until boiling subsides - at least 30 seconds.
-   * Lower to the bottom of the clam shell and wait 30 seconds. Watch the 16 channel GUI to make sure chip readout is stable.
+  * Lower the basket further until LN is just below the test board and wait until boiling subsides (at least 30 seconds).
+  * Lower to the bottom of the clam shell and wait 30 seconds. Watch the 16 channel GUI to make sure chip readout is stable.
    * Lower until chip and clam shell are fully submerged. If readout becomes unstable or synch is lost, tap the chip gently (ask shift leader)
 
  ![Submerged ADC test board](testboard_submerged_3.jpg)
