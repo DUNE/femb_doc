@@ -177,7 +177,7 @@ board and the test board:
 
 # 6) Run the FE ADC Tests
 
-  * If the chip is fully submerged the readout is stable on all 16 channels. Click on "Collect David Adams Data" 
+  * If the chip is fully submerged the readout is stable on all 16 channels, enter the testboard current draw from the 2.5 V (CH 2 on the power supply) and  click on "Collect David Adams Data" 
 
   * After the "David Adams" data is collected a plot of the 16 channels with triangular ramp data is displayed. 
      If DA data looks okay (no ratty or missing plots ) mark a Y in the appropriate column on Google docs.
