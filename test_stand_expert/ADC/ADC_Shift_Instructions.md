@@ -216,7 +216,9 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
  * Remove chip from clamshell and put it in the appropriate box:  "Done Testing" if a test completed, "Retest" if it didnt and "Bad" if the chip is physically damaged or has failed tests twice on different boards.
  * Use compressed air to blow the moisture off the socket board front AND back.       
  * Put wet board in the drying oven with the thermostat set no higher than 120F. Put the cables in as well. Let the board dry in the oven for 15 minutes.
+
 ![Drying oven](drying_oven_small.jpg)
+
  * If the board failed twice in a row (see whiteboard) - put a label on it as "bad" and remove it from circulation.
 
 ## b) Horizontal Insertion:
@@ -235,20 +237,20 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
 # 10) How to recover from common failure modes
 
-    * Errors with FEMB_UDP failure to read register: usually means that the ethernet connection between
-      the FPGA mezannine and the DAQ is lost. To recover:
+* Errors with FEMB_UDP failure to read register: usually means that the ethernet connection between
+ the FPGA mezannine and the DAQ is lost. To recover:
 
-       - Make sure power is on (use femb_power_supply --turnOn)
-       - Try to reseat the ethernet cable at both the mezannine and DAQ ends
-       - Run the following command twice:
-             sudo restart-network
-       - Check you can read back from the femb:
+  - Make sure power is on (use femb_power_supply --turnOn)
+  - Try to reseat the ethernet cable at both the mezannine and DAQ ends
+  - Run the following command twice:
+        sudo restart-network
+  - Check you can read back from the femb:
 
-        femb_read_reg 5
+   femb_read_reg 5
 
-        you should get back 0x0000000
+   you should get back 0x0000000
 
-     * JTAG errors: the FPGA USB firmware programmer sometimes fails if it gets too cold. You will get an indiction
+* JTAG errors: the FPGA USB firmware programmer sometimes fails if it gets too cold. You will get an indiction
        of an error on the bottom of the ADC Test GUI. Scroll up in the terminal and for "Error while programming firmware"
        You can check if the programmer is working using the commands in Step 3. To recover:
 
@@ -258,13 +260,13 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
        - If all else fails and the end of the firmware programmer attached to the mezannine board is not too
 	    cold, replace with a different blaster.
 
-	    ![JTAG error](jtag_failure.png)
+![JTAG error](jtag_failure.png)
 
 
-     * SPI readback errors: This error means that the software is unable to verify the chip is properly initialized
+* SPI readback errors: This error means that the software is unable to verify the chip is properly initialized
        by reading back the values from a register. This is the most common reason for chip failure in the cold and is
        mostly due to socket problems not the chip. You can try gently tapping on the chip and clicking on "Re-setup Board",
        but it is difficult to recover from. Move on to the next chip and leave this chip to be retested another time
        with another socket board.
 
-      ![SPI readback failure](SPI_failed_readback.png)
+![SPI readback failure](SPI_failed_readback.png)
