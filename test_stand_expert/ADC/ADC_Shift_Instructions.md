@@ -155,10 +155,10 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 ![Submerged ADC test board](testboard_submerged_2.jpg)
 
   * if the readback from the chip starts going bad while immersing in the cold:
-         - Fully insert the chip
-       	 - Check the current draw to make sure a cable hasnt failed.
-         - Lightly tap on the chip using the plastic stick - protect your hands from the cold!
-         - Close the waveform GUI  and click on "Re-setup Board" and see if it recovers.
+  - Fully insert the chip
+  - Check the current draw to make sure a cable hasnt failed.
+  - Lightly tap on the chip using the plastic stick - protect your hands from the cold!
+  - Close the waveform GUI  and click on "Re-setup Board" and see if it recovers.
 
 ## b) Horizontal Insertion
 
@@ -177,9 +177,9 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
      If DA data looks okay (no ratty or missing plots ) mark a Y in the appropriate column on Google docs.
      There is a bookmark to the logbook on the Firefox web browser: 
 
-    ![Good DA data](da_data_summary.png)
+![Good DA data](da_data_summary.png)
 
-    ![Google docs](google_run_sheet.png)
+![Google docs](google_run_sheet.png)
 
    * After DA data is done, click on "Start Tests". 
    
