@@ -10,18 +10,20 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
     move it to the cleaning and recovery area and select a different board.
  * Pick a chip from the box titled "Test Me" or "Retest" (shift leader will tell you which). Check
     the Google docs. Any chip from "Retest) that failed earlier should not be tested with the same board.
- * CHECK THE MEZANNINE BOARD IS SCREWED IN TIGHTLY
  * Insert NEW chip into the clamshell. Use magnifying glass to verify proper alignment of pins. The large dot on the chip should line up with the top right corner of the clamshell.
  * Start a new basket label with board and chip number.
  * Close clamshell and cable the board if it is not cabled up:
 
 ## a) Vertical insertion cabling:
 
+Check the mezannine board is screwed in tightly to the testboard
+
  ![Cabled ADC Board](CabledADCtestboard.jpg)
   
-## b) Horizontal insertion cabling:
+## b) Horizontal insertion cabling
 
-There is no cabling required unless the test board has failed. For chip selection and placement see above.
+Horizontal and vertical cabling are the same with the addition of a long blue cable between the mezannine 
+board and the test board:
 
  ![Cabled ADC Board with Mezannine in Warm](CabledADCtestboard_horizontal.jpg)
 
