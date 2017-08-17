@@ -137,7 +137,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
    --------------------------------------------
    Leave chip ON and and reading out and now start lowering it into the dewar slowly, watch the waveform on the 16 channel
    GUI and make sure it is stable or reverts to stability after each step lowering it into the dewar. Tapping the chip
-   and/or socket lightly may be necessary to restore stability - please ask the shift leader to do this.
+   and/or socket lightly may be necessary to restore stability. Please ask the shift leader to do this.
 
      * Lower the basket until the LN just touches the bottom of the basket. Leave it there until boiling subsides
      * Lower the basket until the LN is just below the white bottom connector on the socket board.
