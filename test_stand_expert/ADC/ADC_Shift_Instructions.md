@@ -2,7 +2,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 ==================================================
 
 
-1) Chip/testboard preparation instructions:
+1) Chip/testboard preparation instructions :
    ----------------------------------------
   * Always use latex gloves when handling the boards/chips (unless you are allergic) 
   * Check the board status on the whiteboard. If a testboard has failed more than once,
@@ -10,14 +10,18 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
   * Pick a chip from the box titled "Test Me" or "Retest" (shift leader will tell you which). Check
     the Google docs. Any chip from "Retest) that failed earlier should not be tested with the same board.
   * CHECK THE MEZANNINE BOARD IS SCREWED IN TIGHTLY
-  * Insert NEW chip into the clamshell. Use magnifying glass to verify proper alignment of pins.
+  * Insert NEW chip into the clamshell. Use magnifying glass to verify proper alignment of pins. The large dot on the chip should line up with the top right corner of the clamshell.
   * Start a new basket label with board and chip number.
   * Close clamshell and cable the board if it is not cabled up:
 
   ![Cabled ADC Board](CabledADCtestboard.jpg)
+  
+  * HORIZONTAL INSERT: There is no cabling required unless the test board has failed. For chip selection and placement see above.
 
-2) Basket and board assembly instructions
-   ---------------------------------------
+ ![Cabled ADC Board with Mezannine in Warm](CabledADCtestboard_horizontal.jpg)
+
+2a) Basket and board assembly instructions (Vertical Insertion)
+   ------------------------------------------------------------
 
   * Make sure dewar is covered and moisture is wiped off the lip
 
@@ -37,6 +41,13 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
      - Yellow (and black) test board power cables go to CH3 of the power supply (5V)
 
    ![Connections at power supply](cabled_ps_3channels_small.jpg)
+
+2b) Basket and board assembly instructions (Horizontal Insertion)
+   ------------------------------------------------------------
+
+   * Place cabled board in the basket such that it lies at the bottom of the basket as
+     flat as possible. Use velcro to tie off the big blue cable to the basket handle such
+     that the test board is stable horizontally at the bottom of the basket.
 
 3) Check ADC functionality and stability in the warm:
    --------------------------------------------------
@@ -122,8 +133,8 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
     * Check the output of the different channels. Continuously monitor output while dunking. 
 
-5) Dunking instructions:
-   ---------------------
+5a) Dunking instructions (Vertical Insertion):
+   --------------------------------------------
    Leave chip ON and and reading out and now start lowering it into the dewar slowly, watch the waveform on the 16 channel
    GUI and make sure it is stable or reverts to stability after each step lowering it into the dewar. Tapping the chip
    and/or socket lightly may be necessary to restore stability - please ask the shift leader to do this.
@@ -143,6 +154,16 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
        	 - Check the current draw to make sure a cable hasnt failed.
          - Lightly tap on the chip using the plastic stick - protect your hands from the cold!
          - Close the waveform GUI  and click on "Re-setup Board" and see if it recovers.
+
+5b) Dunking Instructions (Horizontal Insertion)
+    -------------------------------------------
+
+  * Lower the basket until the LN just touches the bottom of the basket. Leave it there until boiling subsides
+   * Lower the basket further until LN is just below the test board and wait until boiling subsides - at least 30 seconds.
+   * Lower to the bottom of the clam shell and wait 30 seconds. Watch the 16 channel GUI to make sure chip readout is stable.
+   * Lower until chip and clam shell are fully submerged. If readout becomes unstable or synch is lost, tap the chip gently (ask shift leader)
+
+ ![Submerged ADC test board](testboard_submerged_3.jpg)
 
 6) Run the FE ADC Tests
     --------------------
@@ -183,12 +204,13 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
       column corresponding to the board.
     * If the test completed successfully remove any marks in the board column on the whiteboard  
 
-9) Drying instructions:
-    -------------------- 
+9a) Drying instructions (Vertical Insert):
+    ---------------------------------------
+      * MAKE SURE POWER IS OFF.
       * Wait 10 minutes for the board in the bag to reach room temperature. DO NOT LEAVE THE TEST BOARD FOR 
         MORE THAN 15 MINUTES IN THE BAGGED BASKET. 
-      * Remove board and uncable. 
-      * Remove chip from clamshell and put it in the appropriate box:  good if a test completed bad if it didnt
+      * Remove board and uncable.
+      * Remove chip from clamshell and put it in the appropriate box:  "Done Testing" if a test completed, "Retest" if it didnt and "Bad" if the chip is physically damaged or has failed tests twice on different boards.
       * Use compressed air to blow the moisture off the socket board front AND back.       
       * Put wet board in the drying oven with the thermostat set no higher than 120F. Put the cables in as well. 
         Let the board dry in the oven for 15 minutes.
@@ -196,6 +218,20 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
       ![Drying oven](drying_oven_small.jpg)
       
       * If the board failed twice in a row (see whiteboard) - put a label on it as "bad" and remove it from circulation.
+
+9a) Drying instructions (Horizontal Insert):
+    ---------------------------------------
+      * Wait 10 minutes for the board in the bag to reach room temperature. DO NOT LEAVE THE TEST BOARD FOR 
+        MORE THAN 15 MINUTES IN THE BAGGED BASKET. 
+      * If board failed, shift leader will uncable and replace board.
+      * If board is operational do not uncable. Leave basket hanging and pull
+        board out of the basket.
+      * Use compressed air gun to remove all moisture from board with chip still in clam shell.
+      * Remove chip from clamshell and put it in the appropriate box:  "Done Testing" if a test completed, "Retest" if it didnt and "Bad" if the chip is physically damaged or has failed tests twice on different boards.
+      * Use compressed air to dry out the open clamshell. Make sure to blow around the big connector to the
+        mezannine board as well.
+      * Use hot air gun at 120F to complete drying the board.
+      * Make sure to also use compressed air and blue wipes to dry the basket as well.
 
 10) How to recover from common failure modes
     ----------------------------------------
