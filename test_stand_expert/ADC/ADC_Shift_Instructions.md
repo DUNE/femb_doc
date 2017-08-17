@@ -217,9 +217,8 @@ board and the test board:
 ## b) Horizontal insertion
 
  * Leave basket hanging
- * Wait 10 minutes for board and cables to warm up.
+ * Wait 10 minutes for board and cables to warm up. Use timer.
  * Remove plastic bag and then the board from the basket
-
  
 # 9) Drying instructions
 
