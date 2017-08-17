@@ -138,29 +138,29 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
 ## a) Vertical Insertion:
 
-   Leave chip ON and and reading out and now start lowering it into the
-   dewar slowly, watch the waveform on the 16 channel GUI and make
-   sure it is stable or reverts to stability after each step lowering
-   it into the dewar. Tapping the chip and/or socket lightly may be
-   necessary to restore stability. Please ask the shift leader to do
-   this.
+  Leave chip ON and and reading out and now start lowering it into the
+  dewar slowly, watch the waveform on the 16 channel GUI and make
+  sure it is stable or reverts to stability after each step lowering
+  it into the dewar. Tapping the chip and/or socket lightly may be
+  necessary to restore stability. Please ask the shift leader to do
+  this.
 
-     * Lower the basket until the LN just touches the bottom of the basket. Leave it there until boiling subsides
-     * Lower the basket until the LN is just below the white bottom connector on the socket board.
-     * Lower the basket until LN is just above the white chip power connector, check current draw and leave for 20 seconds. Current draw on CH2 (2.5V) of the power supply should be 0.09 +/- 0.02 A     
-     * Lower until LN is just below the clamshell, leave for 20 seconds
-     * Lower in 3/4" increments (use meter stick) waiting for 20 seconds or until waveform on GUI stabilizes whichever is longer
-     * Once LN completely covers clamshell, secure the basket rope.
+  * Lower the basket until the LN just touches the bottom of the basket. Leave it there until boiling subsides
+  * Lower the basket until the LN is just below the white bottom connector on the socket board.
+  * Lower the basket until LN is just above the white chip power connector, check current draw and leave for 20 seconds. Current draw on CH2 (2.5V) of the power supply should be 0.09 +/- 0.02 A     
+  * Lower until LN is just below the clamshell, leave for 20 seconds
+  * Lower in 3/4" increments (use meter stick) waiting for 20 seconds or until waveform on GUI stabilizes whichever is longer
+  * Once LN completely covers clamshell, secure the basket rope.
 
-      ![Submerged ADC test board](testboard_submerged_2.jpg)
+![Submerged ADC test board](testboard_submerged_2.jpg)
 
-     * if the readback from the chip starts going bad while immersing in the cold:
+  * if the readback from the chip starts going bad while immersing in the cold:
          - Fully insert the chip
        	 - Check the current draw to make sure a cable hasnt failed.
          - Lightly tap on the chip using the plastic stick - protect your hands from the cold!
          - Close the waveform GUI  and click on "Re-setup Board" and see if it recovers.
 
-# b) Horizontal Insertion
+## b) Horizontal Insertion
 
   * Lower the basket until the LN just touches the bottom of the basket. Leave it there until boiling subsides
   * Lower the basket further until LN is just below the test board and wait until boiling subsides (at least 30 seconds).
