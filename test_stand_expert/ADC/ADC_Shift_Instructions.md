@@ -28,18 +28,17 @@ board and the test board:
  ![Cabled ADC Board with Mezannine in Warm](CabledADCtestboard_horizontal.jpg)
 
 # 2) Basket and board assembly instructions 
+ 
+ * Make sure dewar is covered and moisture is wiped off the lip
+ * Connect DRY basket above covered dewar
 
 ## a) Vertical insertion:
 
-  * Make sure dewar is covered and moisture is wiped off the lip
-
-  * Connect DRY basket above covered dewar
-
-  * Place board in the basket.
+ * Place board in the basket as shown.
 
  ![Basket cabled and ready](cabled_basket_2.jpg)
 
-  * Connect cables to DAQ computer making sure cables are dressed properly and there is enough slack:
+ * Connect cables to DAQ computer making sure cables are dressed properly and there is enough slack:
   
      - Ethernet cable is connected to back of DAQ computer to slot labeled DAQ
      - USB cable from blaster is connected to one of the two USB connectors in the front of the computer
@@ -199,18 +198,29 @@ board and the test board:
 
 # 7) After cold ADC test completes (or fails):
 
-  * Pull the basket out of the LN quickly
-  * Cover with plastic bag while still hanging and use clothes pegs to close the bag:
+ * Pull the basket out of the LN quickly
+ * Cover with plastic bag while still hanging and use clothes pegs to close the bag:
 
-  ![Bagged basket](basket_bagged.jpg)
+ ![Bagged basket](basket_bagged.jpg)
 
-  * Wait for 5 minutes till cables warm up. Use timer to time yourself.
-  * Dress the cables and tie them off with the velcro.
-  * Tag basket, remove it from the pulley and put it under the table. REMEMBER TO INDICATE TEST STATUS ON THE TAG (Failed, DA complete, All tests complete)
-  * Leave covered basket under the table to dry further for another 10 minutes (use timer)
-  * If the test failed to complete, put a mark against the board number on the whiteboard in the column corresponding to the board.
-  * If the test completed successfully remove any marks in the board column on the whiteboard  
+ * Tag basket, REMEMBER TO INDICATE TEST STATUS ON THE TAG (Failed, DA complete, All tests complete)
+ * If the test failed to complete, put a mark against the board number on the whiteboard in the column corresponding to the board.
+ * If the test completed successfully remove any marks in the board column on the whiteboard  
 
+## a) Vertical Insertion
+
+ * Wait for 5 minutes till cables warm up. Use timer to time yourself.
+ * Uncable and dress the cables and tie them off with velcro.
+ * Remove basket from the pulley and put it under the table. REMEMBER TO PUT THE TAG ON.
+ * Leave covered basket under the table to dry further for another 10 minutes (use timer)
+
+## b) Horizontal insertion
+
+ * Leave basket hanging
+ * Wait 10 minutes for board and cables to warm up.
+ * Remove plastic bag and then the board from the basket
+
+ 
 # 9) Drying instructions
 
 ## a) Vertical Insertion
