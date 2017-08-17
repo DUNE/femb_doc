@@ -37,7 +37,7 @@ board and the test board:
 
   * Place board in the basket.
 
-   ![Basket cabled and ready](cabled_basket_2.jpg)
+ ![Basket cabled and ready](cabled_basket_2.jpg)
 
   * Connect cables to DAQ computer making sure cables are dressed properly and there is enough slack:
   
