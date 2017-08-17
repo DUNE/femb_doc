@@ -51,9 +51,10 @@ board and the test board:
 
 ## b) Horizontal Insertion
 
-   * Place cabled board in the basket such that it lies at the bottom of the basket as
-     flat as possible. Use velcro to tie off the big blue cable to the basket handle such
-     that the test board is stable horizontally at the bottom of the basket.
+ * Place cabled board in the basket such that it lies at the bottom of the basket as
+   flat as possible. Use velcro to tie off the big blue cable to the basket handle such
+   that the test board is stable horizontally at the bottom of the basket. 
+ * Check connections at DAQ computer, power supply and function generator as described above. 
 
 # 3) Check ADC functionality and stability in the warm:
 
