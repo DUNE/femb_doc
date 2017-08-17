@@ -3,7 +3,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
 
 1) Chip/testboard preparation instructions :
---------------------------------------------
+   -----------------------------------------
 
   * Always use latex gloves when handling the boards/chips (unless you are allergic) 
   * Check the board status on the whiteboard. If a testboard has failed more than once,
@@ -22,7 +22,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
  ![Cabled ADC Board with Mezannine in Warm](CabledADCtestboard_horizontal.jpg)
 
 2a) Basket and board assembly instructions (Vertical Insertion)
---------------------------------------------------------------
+    -----------------------------------------------------------
 
   * Make sure dewar is covered and moisture is wiped off the lip
 
@@ -44,14 +44,14 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
    ![Connections at power supply](cabled_ps_3channels_small.jpg)
 
 2b) Basket and board assembly instructions (Horizontal Insertion)
------------------------------------------------------------------
+    -------------------------------------------------------------
 
    * Place cabled board in the basket such that it lies at the bottom of the basket as
      flat as possible. Use velcro to tie off the big blue cable to the basket handle such
      that the test board is stable horizontally at the bottom of the basket.
 
 3) Check ADC functionality and stability in the warm:
------------------------------------------------------
+   -------------------------------------------------
 
    * With the board in the basket but before you start inserting in the cold, run a series of stability tests.
    
@@ -111,7 +111,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
      femb_firmware_check_progammer
 
 4) Start monitoring the chip output
------------------------------------
+   --------------------------------
    * Click on the ADC Cold Test Gui icon on the desktop. Put in your name and test board id and ASIC id:
 
    ![FEMB GUI Display](adc_gui_v40.png)
@@ -135,8 +135,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
     * Check the output of the different channels. Continuously monitor output while dunking. 
 
 5a) Dunking instructions (Vertical Insertion):
-----------------------------------------------
-
+    -------------------------------------------
    Leave chip ON and and reading out and now start lowering it into the
    dewar slowly, watch the waveform on the 16 channel GUI and make
    sure it is stable or reverts to stability after each step lowering
@@ -160,8 +159,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
          - Close the waveform GUI  and click on "Re-setup Board" and see if it recovers.
 
 5b) Dunking Instructions (Horizontal Insertion)
------------------------------------------------
-
+    -------------------------------------------
   * Lower the basket until the LN just touches the bottom of the basket. Leave it there until boiling subsides
   * Lower the basket further until LN is just below the test board and wait until boiling subsides (at least 30 seconds).
   * Lower to the bottom of the clam shell and wait 30 seconds. Watch the 16 channel GUI to make sure chip readout is stable.
@@ -170,7 +168,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
  ![Submerged ADC test board](testboard_submerged_3.jpg)
 
 6) Run the FE ADC Tests
------------------------
+   --------------------
 
    * If the chip is fully submerged the readout is stable on all 16 channels. Click on "Collect David Adams Data" 
 
@@ -193,7 +191,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
      than once should be returned to shift leader and put out of circulation for the day.
 
 7) After cold ADC test completes (or fails):
---------------------------------------------
+   --------------------------------------------
     * Pull the basket out of the LN quickly
     * Cover with plastic bag while still hanging and use clothes pegs to close the bag:
 
@@ -209,7 +207,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
     * If the test completed successfully remove any marks in the board column on the whiteboard  
 
 9a) Drying instructions (Vertical Insert):
-------------------------------------------
+    ------------------------------------------
       * MAKE SURE POWER IS OFF.
       * Wait 10 minutes for the board in the bag to reach room temperature. DO NOT LEAVE THE TEST BOARD FOR 
         MORE THAN 15 MINUTES IN THE BAGGED BASKET. 
@@ -224,7 +222,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
       * If the board failed twice in a row (see whiteboard) - put a label on it as "bad" and remove it from circulation.
 
 9b) Drying instructions (Horizontal Insert):
---------------------------------------------
+    ----------------------------------------
       * Wait 10 minutes for the board in the bag to reach room temperature. DO NOT LEAVE THE TEST BOARD FOR 
         MORE THAN 15 MINUTES IN THE BAGGED BASKET. 
       * If board failed, shift leader will uncable and replace board.
@@ -238,7 +236,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
       * Make sure to also use compressed air and blue wipes to dry the basket as well.
 
 10) How to recover from common failure modes
---------------------------------------------
+    ----------------------------------------
 
     * Errors with FEMB_UDP failure to read register: usually means that the ethernet connection between
       the FPGA mezannine and the DAQ is lost. To recover:
