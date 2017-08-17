@@ -2,7 +2,7 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 ==================================================
 
 
-1. Chip/testboard preparation instructions :
+1) Chip/testboard preparation instructions :
    -----------------------------------------
 
   * Always use latex gloves when handling the boards/chips (unless you are allergic) 
@@ -21,9 +21,11 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
  ![Cabled ADC Board with Mezannine in Warm](CabledADCtestboard_horizontal.jpg)
 
-2a. Basket and board assembly instructions (Vertical Insertion)
-    -----------------------------------------------------------
+2) Basket and board assembly instructions 
+   ---------------------------------------
 
+a) Vertical insertion:
+   -------------------
   * Make sure dewar is covered and moisture is wiped off the lip
 
   * Connect DRY basket above covered dewar
@@ -43,8 +45,8 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
    ![Connections at power supply](cabled_ps_3channels_small.jpg)
 
-2b. Basket and board assembly instructions (Horizontal Insertion)
-    -------------------------------------------------------------
+b) Horizontal Insertion
+   --------------------
 
    * Place cabled board in the basket such that it lies at the bottom of the basket as
      flat as possible. Use velcro to tie off the big blue cable to the basket handle such
