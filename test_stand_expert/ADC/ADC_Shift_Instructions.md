@@ -171,9 +171,9 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
 # 6) Run the FE ADC Tests
 
-   * If the chip is fully submerged the readout is stable on all 16 channels. Click on "Collect David Adams Data" 
+  * If the chip is fully submerged the readout is stable on all 16 channels. Click on "Collect David Adams Data" 
 
-   * After the "David Adams" data is collected a plot of the 16 channels with triangular ramp data is displayed. 
+  * After the "David Adams" data is collected a plot of the 16 channels with triangular ramp data is displayed. 
      If DA data looks okay (no ratty or missing plots ) mark a Y in the appropriate column on Google docs.
      There is a bookmark to the logbook on the Firefox web browser: 
 
@@ -193,50 +193,45 @@ ADC ASIC Test-stand Cold Test Shifter Instructions
 
 # 7) After cold ADC test completes (or fails):
 
-    * Pull the basket out of the LN quickly
-    * Cover with plastic bag while still hanging and use clothes pegs to close the bag:
+  * Pull the basket out of the LN quickly
+  * Cover with plastic bag while still hanging and use clothes pegs to close the bag:
 
-    ![Bagged basket](basket_bagged.jpg)
+  ![Bagged basket](basket_bagged.jpg)
 
-    * Wait for 5 minutes till cables warm up. Use timer to time yourself.
-    * Dress the cables and tie them off with the velcro.
-    * Tag basket, remove it from the pulley and put it under the table.
-      REMEMBER TO INDICATE TEST STATUS ON THE TAG (Failed, DA complete, All tests complete)      
-    * Leave covered basket under the table to dry further for another 10 minutes (use timer)
-    * If the test failed to complete, put a mark against the board number on the whiteboard in the
-      column corresponding to the board.
-    * If the test completed successfully remove any marks in the board column on the whiteboard  
+  * Wait for 5 minutes till cables warm up. Use timer to time yourself.
+  * Dress the cables and tie them off with the velcro.
+  * Tag basket, remove it from the pulley and put it under the table. REMEMBER TO INDICATE TEST STATUS ON THE TAG (Failed, DA complete, All tests complete)
+  * Leave covered basket under the table to dry further for another 10 minutes (use timer)
+  * If the test failed to complete, put a mark against the board number on the whiteboard in the column corresponding to the board.
+  * If the test completed successfully remove any marks in the board column on the whiteboard  
 
 # 9) Drying instructions
 
 ## a) Vertical Insertion
 
-      * MAKE SURE POWER IS OFF.
-      * Wait 10 minutes for the board in the bag to reach room temperature. DO NOT LEAVE THE TEST BOARD FOR 
-        MORE THAN 15 MINUTES IN THE BAGGED BASKET. 
-      * Remove board and uncable.
-      * Remove chip from clamshell and put it in the appropriate box:  "Done Testing" if a test completed, "Retest" if it didnt and "Bad" if the chip is physically damaged or has failed tests twice on different boards.
-      * Use compressed air to blow the moisture off the socket board front AND back.       
-      * Put wet board in the drying oven with the thermostat set no higher than 120F. Put the cables in as well. 
-        Let the board dry in the oven for 15 minutes.
-
-      ![Drying oven](drying_oven_small.jpg)
-      
-      * If the board failed twice in a row (see whiteboard) - put a label on it as "bad" and remove it from circulation.
+ * MAKE SURE POWER IS OFF.
+ * Wait 10 minutes for the board in the bag to reach room temperature. DO NOT LEAVE THE TEST BOARD FOR 
+   MORE THAN 15 MINUTES IN THE BAGGED BASKET. 
+ * Remove board and uncable.
+ * Remove chip from clamshell and put it in the appropriate box:  "Done Testing" if a test completed, "Retest" if it didnt and "Bad" if the chip is physically damaged or has failed tests twice on different boards.
+ * Use compressed air to blow the moisture off the socket board front AND back.       
+ * Put wet board in the drying oven with the thermostat set no higher than 120F. Put the cables in as well. Let the board dry in the oven for 15 minutes.
+![Drying oven](drying_oven_small.jpg)
+ * If the board failed twice in a row (see whiteboard) - put a label on it as "bad" and remove it from circulation.
 
 ## b) Horizontal Insertion:
 
-      * Wait 10 minutes for the board in the bag to reach room temperature. DO NOT LEAVE THE TEST BOARD FOR 
-        MORE THAN 15 MINUTES IN THE BAGGED BASKET. 
-      * If board failed, shift leader will uncable and replace board.
-      * If board is operational do not uncable. Leave basket hanging and pull
-        board out of the basket.
-      * Use compressed air gun to remove all moisture from board with chip still in clam shell.
-      * Remove chip from clamshell and put it in the appropriate box:  "Done Testing" if a test completed, "Retest" if it didnt and "Bad" if the chip is physically damaged or has failed tests twice on different boards.
-      * Use compressed air to dry out the open clamshell. Make sure to blow around the big connector to the
-        mezannine board as well.
-      * Use hot air gun at 120F to complete drying the board.
-      * Make sure to also use compressed air and blue wipes to dry the basket as well.
+ * Wait 10 minutes for the board in the bag to reach room temperature. DO NOT LEAVE THE TEST BOARD FOR 
+   MORE THAN 15 MINUTES IN THE BAGGED BASKET. 
+ * If board failed, shift leader will uncable and replace board.
+ * If board is operational do not uncable. Leave basket hanging and pull
+   board out of the basket.
+ * Use compressed air gun to remove all moisture from board with chip still in clam shell.
+ * Remove chip from clamshell and put it in the appropriate box:  "Done Testing" if a test completed, "Retest" if it didnt and "Bad" if the chip is physically damaged or has failed tests twice on different boards.
+ * Use compressed air to dry out the open clamshell. Make sure to blow around the big connector to the
+   mezannine board as well.
+ * Use hot air gun at 120F to complete drying the board.
+ * Make sure to also use compressed air and blue wipes to dry the basket as well.
 
 # 10) How to recover from common failure modes
 
