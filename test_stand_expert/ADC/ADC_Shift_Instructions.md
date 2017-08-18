@@ -181,14 +181,15 @@ Put in your name and test board id and ASIC id.
   * If the chip is fully submerged the readout is stable on all 16 channels, enter the testboard current draw from the 2.5 V (CH 2 on the power supply) and  click on "Collect David Adams Data" 
 
   * After the "David Adams" data is collected a plot of the 16 channels with triangular ramp data is displayed. 
-     If DA data looks okay (no ratty or missing plots ) mark a Y in the appropriate column on Google docs.
-     There is a bookmark to the logbook on the Firefox web browser: 
+     If DA data looks okay (no ratty or missing plots ) mark a Y in the appropriate column on Google doc logbook.
+     There is a bookmark to the logbook on the Firefox web browser. If the DA data looks bad click on "Re-Setup Board" and try again. 
 
 ![Good DA data](da_data_summary.png)
 
 ![Google docs](google_run_sheet.png)
 
-   * After DA data is done, click on "Start Tests". 
+
+   * After DA data is done, click on "Re-Setup Board". If that succeeds and readout from the chip is fine click on "Start Tests". 
    
    * After tests are complete, indicate "Tests Complete" on the Google docs LogBook and note which checks failed.
 
