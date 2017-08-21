@@ -123,7 +123,7 @@ Put in your name and test board id and ASIC id.
 
    ![FEMB GUI Display](gui_at_start_v40.png) 
   
-   * Click "Re-Power-up & Setup Board". The board will resynch one more time and a GUI
+   * Click "Power-up & Setup Board". The board will resynch one more time and a GUI
      window showing the read back from 16 chips using an input sine wave will be shown:
 
    ![FEMB GUI 16 Ch. Display](adc_16ch_viewer.png)
