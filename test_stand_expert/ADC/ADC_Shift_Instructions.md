@@ -121,7 +121,7 @@ board and the test board:
    * Click on the ADC Cold Test Gui icon on the desktop. ALWAYS START A NEW GUI WITH EACH NEW TEST. 
 Put in your name and test board id and ASIC id. 
 
-   ![FEMB GUI Display](adc_gui_v40.png)
+   ![FEMB GUI Display](gui_at_start_v40.png) 
   
    * Click "Re-Power-up & Setup Board". The board will resynch one more time and a GUI
      window showing the read back from 16 chips using an input sine wave will be shown:
