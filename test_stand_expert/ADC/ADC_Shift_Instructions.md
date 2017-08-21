@@ -196,7 +196,7 @@ Put in your name and test board id and ASIC id.
    ![Tests complete](adc_gui_1.40_after_complete.png)
 
    * __IMPORTANT__: If tests complete, check for bad input pins by examining the plot labeled "Input Pin Mean [ADC]" on the
-     summary plot titled "External Clock 2 MHz". If the value is higher than a few 100 ADC counts, __LABEL CHIP AS BAD__.
+     summary plot titled "External Clock 2 MHz". If the value is >= 3000 ADC counts, __LABEL CHIP AS BAD__.
 
   ![Bad Input Pins](bad_input_pin.png)
    
