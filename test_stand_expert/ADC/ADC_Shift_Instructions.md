@@ -195,10 +195,10 @@ Put in your name and test board id and ASIC id.
 
    ![Tests complete](adc_gui_1.40_after_complete.png)
 
-   * __IMPORTANT__: If tests complete check for bad input pins by examining the plot labeled "Input Pin Mean [ADC]" on the
+   * __IMPORTANT__: If tests complete, check for bad input pins by examining the plot labeled "Input Pin Mean [ADC]" on the
      summary plot titled "External Clock 2 MHz". If the value is higher than a few 100 ADC counts, __LABEL CHIP AS BAD__.
 
-  ![Bad Input Pins](adcTest_20170718T135948_204_extClock_2MHz.png)
+  ![Bad Input Pins](bad_input_pin.png)
    
    * If the tests fail to complete, note the failure error in the Google doc LogBook and make sure to indicate
      on the white board that the testboard failed in the cold. Test boards that fail more
