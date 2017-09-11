@@ -1,15 +1,23 @@
-Test-stand Info and Procedures
-==============================
+Teststand Info and Shift Procedures
+===================================
 
-[FE Test Board Page](FE/README.md)
+[FE Testing Page](FE/README.md)
 
-[ADC Test Board Page](ADC/README.md)
+[ADC Testing Page](ADC/ADC_Shift_Instructions.md)
 
-[Oscillator Test Board Expert Page](OscillatorTesting/README.md)
+[Oscillator Testing Page](OscillatorTesting/README.md)
 
-[Flash Test Board Page](FlashTesting/README.md)
+[Flash Testing Page](FlashTesting/README.md)
+
+Expert Procedures
+=================
+
+[ADC Expert Page](ADC/README.md)
 
 [FEMB Expert Testing Page](FEMB/README.md)
+
+More Expert Instructions
+========================
 
 Changing the FEMB_CONFIG
 ------------------------
