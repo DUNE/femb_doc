@@ -1,4 +1,4 @@
-General Test-stand Expert Info
+Test-stand Info and Procedures
 ==============================
 
 [FE Test Board Page](FE/README.md)
